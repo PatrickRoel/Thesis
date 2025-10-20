@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="600" height="600" viewBox="0 0 600 600" version="1.1">
+ <defs>
+  <marker id="Arrow1Mend-r:r" style="overflow:visible" refX="0" refY="0" orient="auto">
+  <path style="stroke:#ff0000;fill:#ff0000;stroke-width:1pt;opacity:1;stroke-linejoin:miter" d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z" transform="scale(0.4) rotate(180) translate(-0.9,0)" />
+  </marker>
+  <marker id="Arrow1Mend-g:g" style="overflow:visible" refX="0" refY="0" orient="auto">
+  <path style="stroke:#008000;fill:#008000;stroke-width:1pt;opacity:1;stroke-linejoin:miter" d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z" transform="scale(0.4) rotate(180) translate(-0.9,0)" />
+  </marker>
+  <marker id="Arrow1Mend-b:b" style="overflow:visible" refX="0" refY="0" orient="auto">
+  <path style="stroke:#0000ff;fill:#0000ff;stroke-width:1pt;opacity:1;stroke-linejoin:miter" d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z" transform="scale(0.4) rotate(180) translate(-0.9,0)" />
+  </marker>
+</defs><metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2025-10-13T19:48:32.551111</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.10.7, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 600  L 600 600  L 600 0  L 0 0  z " style="fill: #ffffff" />
+  </g>
+  <g id="patch_2">
+   <path d="M 0 600  L 600 600  L 600 0  L 0 0  z " style="fill: #ffffff" />
+  </g>
+  <g id="axes_1">
+   <g id="vector_1" marker-end="url(#Arrow1Mend-r:r)">
+    <path d="M 241.88716 305.886025  L 494.103006 378.694468  " style="fill: none; stroke: #ff0000; stroke-width: 2" />
+   </g>
+   <g id="vector_2" marker-end="url(#Arrow1Mend-g:g)">
+    <path d="M 241.88716 305.886025  L 241.88716 54.187448  " style="fill: none; stroke: #008000; stroke-width: 2" />
+   </g>
+   <g id="vector_3" marker-end="url(#Arrow1Mend-b:b)">
+    <path d="M 241.88716 305.886025  L 98.923517 429.696171  " style="fill: none; stroke: #0000ff; stroke-width: 2" />
+   </g>
+   <g id="vector_4" marker-end="url(#Arrow1Mend-g:g)">
+    <path d="M 241.88716 305.886025  L 171.016669 154.650198  " style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #008000; stroke-width: 2" />
+   </g>
+   <g id="vector_5" marker-end="url(#Arrow1Mend-b:b)">
+    <path d="M 241.88716 305.886025  L 115.673267 541.404355  " style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #0000ff; stroke-width: 2" />
+   </g>
+   <g id="arcmeasure_1" marker-end="url(#Arrow1Mend-g:g)">
+    <path d="M 241.88716 173.444128  L 240.552655 174.620014  L 239.218557 175.835886  L 237.885272 177.091372  L 236.553205 178.386089  L 235.222764 179.719645  L 233.894352 181.091632  L 232.568376 182.501633  L 231.245238 183.949218  L 229.925341 185.433946  L 228.609088 186.955365  L 227.29688 188.513011  L 225.989116 190.10641  L 224.686195 191.735077  L 223.388514 193.398516  L 222.096467 195.096219  L 220.810449 196.827669  L 219.53085 198.59234  L 218.258062 200.389694  L 216.992472 202.219183  L 215.734464 204.08025  L 214.484424 205.972328  L 213.716638 207.271551  " style="fill: none; stroke: #008000; stroke-width: 3" />
+   </g>
+   <g id="arcmeasure_2" marker-end="url(#Arrow1Mend-b:b)">
+    <path d="M 165.421795 372.106973  L 165.433441 374.408318  L 165.468375 376.688789  L 165.526588 378.947693  L 165.60806 381.184342  L 165.712768 383.398055  L 165.84068 385.588156  L 165.991756 387.75398  L 166.16595 389.894865  L 166.36321 392.010161  L 166.583475 394.099223  L 166.826679 396.161413  L 167.092746 398.196106  L 167.381597 400.202679  L 167.693143 402.180523  L 168.027289 404.129035  L 168.383933 406.047621  L 168.762967 407.935696  L 169.164276 409.792687  L 169.457055 410.678116  " style="fill: none; stroke: #0000ff; stroke-width: 3" />
+   </g>
+   <g id="text_1">
+    <g>
+     <text style="font-size: 20px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="520.015143" y="386.174658" transform="rotate(-0 520.015143 386.174658)">$x$</text>
+    </g>
+   </g>
+   <g id="text_2">
+    <g>
+     <text style="font-size: 20px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="241.88716" y="27.758041" transform="rotate(-0 241.88716 27.758041)">$y$</text>
+    </g>
+   </g>
+   <g id="text_3">
+    <g>
+     <text style="font-size: 20px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="66.01682" y="458.194207" transform="rotate(-0 66.01682 458.194207)">$z$</text>
+    </g>
+   </g>
+   <g id="text_4">
+    <g>
+     <text style="font-size: 20px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="203.654477" y="166.822033" transform="rotate(-0 203.654477 166.822033)">$\varphi$</text>
+    </g>
+   </g>
+   <g id="text_5">
+    <g>
+     <text style="font-size: 20px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="134.835649" y="425.083732" transform="rotate(-0 134.835649 425.083732)">$\varphi$</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  </defs>
+</svg>
