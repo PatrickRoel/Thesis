@@ -53,7 +53,7 @@ for angle in range(35, 148, 1):
     
     # Convert to PIL Image using buffer
     buf = io.BytesIO()
-    fig.savefig(buf, format='png', bbox_inches='tight', dpi=100)
+    fig.savefig(buf, format='png', bbox_inches='tight', dpi=300)
     buf.seek(0)
     
     # Add to frames list
@@ -81,12 +81,19 @@ if frames:
 # recompute reverse sequence from the updated frames
 frames = frames + reverse_frames
 
+import os
+
+# Get current directory
+current_dir = os.getcwd()
+
+gif_path = os.path.join(current_dir, 'pulley_animation.gif')
+
 if frames:
     per_frame = max(1, int(total_ms / len(frames)))
-    frames[0].save('pulley_animation.gif', 
+    frames[0].save(gif_path, 
                    save_all=True, 
                    append_images=frames[1:], 
                    duration=per_frame,  # per-frame duration so total ≈ total_ms
-                   loop=0)
+                   loop=0,optimize=True,quality=95)
 
 print(f"GIF saved with {len(frames)} frames")

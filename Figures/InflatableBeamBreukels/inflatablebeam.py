@@ -40,7 +40,6 @@ def torsion(p,r,phi):
     C17 = -17703
     C18 = 358.05
     C19 = 0.0918
-    
     T = ((C13*r+C14)*p+(C15*r+C16))*np.arctan(((C17*r**4)*np.log(p)+(C18*r**3+C19))*np.deg2rad(phi))
     return T
 
@@ -59,9 +58,9 @@ def plotinflatablebeam(p,d,ls,ax):
     ax.plot(phi, T,color="red",linestyle=ls,linewidth=1.5)
     return ax
 
-p_lst = [0.3,0.4,0.5] #bar
-d_lst = [0.18,0.18,0.18] #m
-linestyles = ['-', '--', '-.']
+p_lst = [0.3,0.5] #bar
+d_lst = [0.18,0.18] #m
+linestyles = ['-', '--']
 fig, ax = plt.subplots(figsize=(5,5))
 
 
@@ -78,14 +77,92 @@ for mode in ["bending","torsion"]:
         plt.plot([], [], color=color, linestyle=linestyle, label=f"p={p}bar, d={d*100}cm, {mode}")
 
 
-ax.legend(loc='upper left', fontsize=9)
+
+import matplotlib.pyplot as plt
+import numpy as np
+from kite_fem.FEMStructure import FEM_structure
+
+
+def instiantiate(d,p):
+    length  = 1  
+    elements = 4
+    initital_conditions = []
+    for i in range(elements+1):
+        initital_conditions.append([[i*length/elements, 0.0, 0.0], [0, 0, 0], 1, True if i==0 else False])
+    beam_matrix = []
+    for i in range(elements):
+        beam_matrix.append([i, i+1, d, p])
+    inflatable_beam = FEM_structure(initital_conditions, beam_matrix=beam_matrix)
+    return inflatable_beam
+
+def solve_tip_load(inflatable_beam,tip_load):
+    fe = np.zeros(inflatable_beam.N)
+    fe[1::6][-1] = -tip_load
+    inflatable_beam.solve(        fe=fe,
+            max_iterations=1000,
+            tolerance=0.00001,
+            step_limit=0.5,
+            relax_init=1,
+            relax_update=0.95,
+            k_update=1,
+            I_stiffness=25
+            )
+    inflatable_beam.reinitialise()
+    deflection = -inflatable_beam.coords_current[-2]*1000
+    return deflection
+
+def solve_tip_moment(inflatable_beam,tip_moment):
+    fe = np.zeros(inflatable_beam.N)
+    fe[3::6][-1] = -tip_moment
+    inflatable_beam.solve(        fe=fe,
+            max_iterations=1000,
+            tolerance=0.00001,
+            step_limit=0.5,
+            relax_init=1,
+            relax_update=0.95,
+            k_update=1,
+            I_stiffness=25
+            )
+    inflatable_beam.reinitialise()
+    rotation = -np.rad2deg(inflatable_beam.coords_rotations_current[-3])
+    return rotation
+
+pressures = [0.3,0.5]
+diameters = [0.18,0.18]
+inflatable_beams = []
+
+for pressure,diameter in zip(pressures,diameters):
+    inflatable_beam = instiantiate(diameter,pressure)
+    inflatable_beams.append(inflatable_beam)
+
+tip_loads = np.arange(5,95,10)
+tip_moments = np.arange(5,125,10)
+
+for inflatable_beam in inflatable_beams:
+    deflections = []
+    rotations = []
+    for tip_load in tip_loads:
+        deflection = solve_tip_load(inflatable_beam,tip_load)
+        deflections.append(deflection)
+    for tip_moment in tip_moments:
+        rotation = solve_tip_moment(inflatable_beam,tip_moment)
+        rotations.append(rotation)
+    ax.scatter(rotations,tip_moments,marker="+",zorder=20)
+    ax.scatter(deflections,tip_loads,marker="+",zorder=20)
+
+
+
+
+    
+
+ax.legend(loc='upper left', fontsize=8)
 ax.set_xlabel("Deflection [mm] / Deflection angle [deg]")
 ax.set_ylabel("Tip force [N] / Tip moment [Nm]")
-ax.minorticks_on() 
+# ax.minorticks_on() 
 ax.grid(which="major",color="grey")
-ax.grid(which="minor",color="lightgrey")
+# ax.grid(which="minor",color="lightgrey")
 ax.set_xlim(0,140)
 ax.set_ylim(0,160)
 fig.tight_layout()
 
-fig.savefig(os.path.join(script_dir, 'Inflatablebeamdeflections.pdf'))
+fig.savefig(os.path.join(script_dir, 'Inflatablebeamdeflections.png'))
