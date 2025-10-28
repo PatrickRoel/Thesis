@@ -85,7 +85,7 @@ from kite_fem.FEMStructure import FEM_structure
 
 def instiantiate(d,p):
     length  = 1  
-    elements = 25
+    elements = 5
     initital_conditions = []
     for i in range(elements+1):
         initital_conditions.append([[i*length/elements, 0.0, 0.0], [0, 0, 0], 1, True if i==0 else False])

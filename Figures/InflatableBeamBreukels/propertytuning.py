@@ -155,9 +155,9 @@ tip_moments = np.arange(5,120,10)
 #used element options [1,2,3,5,10]
 
 #third run
-alpha = np.arange(-0.35,0.35,0.1)
-beta = np.arange(0.75,1.4,0.1)
-gamma = np.arange(0.75,1,0.05)
+alpha = np.arange(-0.40,0.60,0.2)
+beta = np.arange(0.75,1.55,0.2)
+gamma = np.arange(0.75,1.15,0.1)
 
 abg = []
 errors = []
@@ -182,6 +182,8 @@ for a in alpha:
                 force_target = F_inflatablebeam(pressure, diameter/2, deflections/1000)
                 error = np.linalg.norm(tip_loads - force_target)
                 errors_temp.append(error)
+            errors_temp.append(errors_temp[0]) #extra weight on 1 element
+            errors_temp.append(errors_temp[0]) #extra weight on 1 element
             error = np.mean(errors_temp)
             abg.append(np.array([a, b, g]))
             converged_list.append(min(converged_list_temp))#TODO check if this works
