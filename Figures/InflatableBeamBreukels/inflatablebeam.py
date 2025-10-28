@@ -58,8 +58,8 @@ def plotinflatablebeam(p,d,ls,ax):
     ax.plot(phi, T,color="red",linestyle=ls,linewidth=1.5)
     return ax
 
-p_lst = [0.5] #bar
-d_lst = [0.18] #m
+p_lst = [0.3] #bar
+d_lst = [0.2] #m
 linestyles = ['-', '--']
 fig, ax = plt.subplots(figsize=(5,5))
 
@@ -85,7 +85,7 @@ from kite_fem.FEMStructure import FEM_structure
 
 def instiantiate(d,p):
     length  = 1  
-    elements =10
+    elements =3
     initital_conditions = []
     for i in range(elements+1):
         initital_conditions.append([[i*length/elements, 0.0, 0.0], [0, 0, 0], 1, True if i==0 else False])
@@ -128,16 +128,16 @@ def solve_tip_moment(inflatable_beam,tip_moment):
     inflatable_beam.reset()
     return rotation
 
-pressures = [0.5]
-diameters = [0.18]
+pressures = p_lst
+diameters = d_lst
 inflatable_beams = []
 
 for pressure,diameter in zip(pressures,diameters):
     inflatable_beam = instiantiate(diameter,pressure)
     inflatable_beams.append(inflatable_beam)
 
-tip_loads = np.arange(5,115,10)
-tip_moments = np.arange(5,135,10)
+tip_loads = np.arange(5,95,10)
+tip_moments = np.arange(5,120,10)
 
 for inflatable_beam in inflatable_beams:
     deflections = []
