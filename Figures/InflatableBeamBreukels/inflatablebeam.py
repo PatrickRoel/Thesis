@@ -58,8 +58,8 @@ def plotinflatablebeam(p,d,ls,ax):
     ax.plot(phi, T,color="red",linestyle=ls,linewidth=1.5)
     return ax
 
-p_lst = [0.3,0.5] #bar
-d_lst = [0.18,0.18] #m
+p_lst = [0.5] #bar
+d_lst = [0.18] #m
 linestyles = ['-', '--']
 fig, ax = plt.subplots(figsize=(5,5))
 
@@ -85,7 +85,7 @@ from kite_fem.FEMStructure import FEM_structure
 
 def instiantiate(d,p):
     length  = 1  
-    elements = 4
+    elements =10
     initital_conditions = []
     for i in range(elements+1):
         initital_conditions.append([[i*length/elements, 0.0, 0.0], [0, 0, 0], 1, True if i==0 else False])
@@ -100,15 +100,16 @@ def solve_tip_load(inflatable_beam,tip_load):
     fe[1::6][-1] = -tip_load
     inflatable_beam.solve(        fe=fe,
             max_iterations=1000,
-            tolerance=0.00001,
-            step_limit=0.5,
-            relax_init=1,
+            tolerance=0.0001,
+            step_limit=0.25,
+            relax_init=0.5,
             relax_update=0.95,
             k_update=1,
             I_stiffness=25
             )
-    inflatable_beam.reinitialise()
     deflection = -inflatable_beam.coords_current[-2]*1000
+    inflatable_beam.reset()
+
     return deflection
 
 def solve_tip_moment(inflatable_beam,tip_moment):
@@ -123,20 +124,20 @@ def solve_tip_moment(inflatable_beam,tip_moment):
             k_update=1,
             I_stiffness=25
             )
-    inflatable_beam.reinitialise()
     rotation = -np.rad2deg(inflatable_beam.coords_rotations_current[-3])
+    inflatable_beam.reset()
     return rotation
 
-pressures = [0.3,0.5]
-diameters = [0.18,0.18]
+pressures = [0.5]
+diameters = [0.18]
 inflatable_beams = []
 
 for pressure,diameter in zip(pressures,diameters):
     inflatable_beam = instiantiate(diameter,pressure)
     inflatable_beams.append(inflatable_beam)
 
-tip_loads = np.arange(5,95,10)
-tip_moments = np.arange(5,125,10)
+tip_loads = np.arange(5,115,10)
+tip_moments = np.arange(5,135,10)
 
 for inflatable_beam in inflatable_beams:
     deflections = []
