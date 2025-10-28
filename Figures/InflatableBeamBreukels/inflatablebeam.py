@@ -58,8 +58,8 @@ def plotinflatablebeam(p,d,ls,ax):
     ax.plot(phi, T,color="red",linestyle=ls,linewidth=1.5)
     return ax
 
-p_lst = [0.3] #bar
-d_lst = [0.2] #m
+p_lst = [0.4] #bar
+d_lst = [0.18] #m
 linestyles = ['-', '--']
 fig, ax = plt.subplots(figsize=(5,5))
 
@@ -85,7 +85,7 @@ from kite_fem.FEMStructure import FEM_structure
 
 def instiantiate(d,p):
     length  = 1  
-    elements =3
+    elements = 25
     initital_conditions = []
     for i in range(elements+1):
         initital_conditions.append([[i*length/elements, 0.0, 0.0], [0, 0, 0], 1, True if i==0 else False])

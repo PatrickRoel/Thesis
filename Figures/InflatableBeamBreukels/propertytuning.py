@@ -58,8 +58,8 @@ def plotinflatablebeam(p,d,ls,ax):
     ax.plot(phi, T,color="red",linestyle=ls,linewidth=1.5)
     return ax
 
-p_lst = [0.3] #bar
-d_lst = [0.2] #m
+p_lst = [0.4] #bar
+d_lst = [0.18] #m
 linestyles = ['-', '--']
 fig, ax = plt.subplots(figsize=(5,5))
 
@@ -109,7 +109,7 @@ def solve_tip_load(inflatable_beam,tip_load):
             print_info=False
             )
     deflection = -inflatable_beam.coords_current[-2]*1000
-    inflatable_beam.reset()
+    inflatable_beam.reinitialise()
 
     return deflection, converged
 
@@ -126,13 +126,13 @@ def solve_tip_moment(inflatable_beam,tip_moment):
             I_stiffness=25
             )
     rotation = -np.rad2deg(inflatable_beam.coords_rotations_current[-3])
-    inflatable_beam.reset()
+    inflatable_beam.reinitialise()
     return rotation
 
 pressures = p_lst
 diameters = d_lst
 inflatable_beams = []
-elements = [2,5,10]
+elements = [1,2,3,5,10,25]
 for pressure,diameter in zip(pressures,diameters):
     for element in elements:
         inflatable_beam = instiantiate(diameter,pressure,element)
@@ -141,9 +141,23 @@ for pressure,diameter in zip(pressures,diameters):
 tip_loads = np.arange(5,95,5)
 tip_moments = np.arange(5,120,10)
 
-alpha = np.arange(-0.35,0.35,0.05)
-beta = np.arange(0.75,1.25,0.05)
-gamma = np.arange(0.75,1,0.025)
+#first run
+# alpha = np.arange(-0.35,0.35,0.05)
+# beta = np.arange(0.75,1.25,0.05)
+# gamma = np.arange(0.75,1,0.025)
+#used element options 3,5,10
+#best option = alpha  = -0.2,  beta = 1.2, gamma = 0.85
+
+#second run
+# alpha = np.arange(-0.25, -0.14, 0.01)
+# beta = np.arange(1.15, 1.21, 0.01)
+# gamma = np.arange(0.775, 1, 0.025)
+#used element options [1,2,3,5,10]
+
+#third run
+alpha = np.arange(-0.35,0.35,0.1)
+beta = np.arange(0.75,1.4,0.1)
+gamma = np.arange(0.75,1,0.05)
 
 abg = []
 errors = []
@@ -186,7 +200,7 @@ out_path = os.path.join(script_dir, "inflatable_beam_results.csv")
 
 with open(out_path, "w", newline="") as csvfile:
     writer = csv.writer(csvfile)
-    writer.writerow(["pressure", "diameter", "elements", "alpha", "beta", "gamma", "error", "converged"])
+    writer.writerow(["pressure", "diameter", "alpha", "beta", "gamma", "error", "converged"])
 
     idx = 0
     for a in alpha:

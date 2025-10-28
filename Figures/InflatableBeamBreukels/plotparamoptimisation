@@ -1,0 +1,127 @@
+"""
+plot_param_optimization.py
+
+Reads a CSV with header:
+pressure,diameter,alpha,beta,gamma,error,converged
+
+Extracts alpha, beta, gamma and plots a 3D surface (alpha, beta, error)
+colored by 'gamma'.
+
+Set SHOW_ONLY_CONVERGED = True to plot only rows where converged is true.
+"""
+
+import csv
+import sys
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib import cm
+from matplotlib.colors import Normalize
+from matplotlib.tri import Triangulation
+import os
+
+# ...existing code...
+
+# === Configuration ===
+# resolve CSV path relative to this script (search up a few parent levels if needed)
+CSV_FILENAME = "results1and2.csv"
+_script_dir = os.path.dirname(os.path.abspath(__file__))
+_CSV_PATH = None
+_dir = _script_dir
+for _ in range(6):  # check script dir and up to 5 parents
+    candidate = os.path.join(_dir, CSV_FILENAME)
+    if os.path.exists(candidate):
+        _CSV_PATH = candidate
+        break
+    _dir = os.path.dirname(_dir)
+
+# fall back to script-dir filename (or allow user to override via CLI)
+CSV_PATH = _CSV_PATH if _CSV_PATH is not None else os.path.join(_script_dir, CSV_FILENAME)
+SHOW_ONLY_CONVERGED = True  # set False to include non-converged rows
+# ======================
+
+def parse_bool(s):
+    if s is None:
+        return False
+    s = str(s).strip().lower()
+    return s in ("1", "true", "t", "yes", "y")
+
+def read_csv(path):
+    alphas, betas, gammas, errors, convergeds = [], [], [], [], []
+    with open(path, newline='') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            try:
+                a = float(row["alpha"])
+                b = float(row["beta"])
+                g = float(row["gamma"])
+                e = float(row["error"])
+                c = parse_bool(row.get("converged", "False"))
+            except Exception:
+                # skip malformed rows
+                continue
+            alphas.append(a); betas.append(b); gammas.append(g)
+            errors.append(e); convergeds.append(c)
+    return (np.array(alphas), np.array(betas), np.array(gammas),
+            np.array(errors), np.array(convergeds))
+
+def main():
+    global CSV_PATH, SHOW_ONLY_CONVERGED
+    if len(sys.argv) > 1:
+        CSV_PATH = sys.argv[1]
+    if len(sys.argv) > 2:
+        # optional second arg: "all" or "converged"
+        SHOW_ONLY_CONVERGED = (sys.argv[2].lower() != "all")
+
+    a, b, g, err, conv = read_csv(CSV_PATH)
+
+    if SHOW_ONLY_CONVERGED:
+        mask = conv
+    else:
+        mask = np.ones_like(conv, dtype=bool)
+
+    a, b, g, err = a[mask], b[mask], g[mask], err[mask]
+
+    if a.size < 3:
+        raise SystemExit("Not enough points to build a surface (need >=3).")
+
+    # Triangulate the (alpha, beta) scatter
+    tri = Triangulation(a, b)
+
+    # For coloring by gamma we need one gamma value per triangle:
+    triangles = tri.triangles
+    tri_gamma = g[triangles].mean(axis=1)
+
+    fig = plt.figure(figsize=(8,6))
+    ax = fig.add_subplot(111, projection='3d')
+
+    cmap = cm.viridis
+    # Normalize based on triangle-mean gamma (used to color faces)
+    norm = Normalize(vmin=np.nanmin(tri_gamma), vmax=np.nanmax(tri_gamma))
+    facecolors = cmap(norm(tri_gamma))
+
+    # plot surface using triangles with z = error; do not pass facecolors to plot_trisurf
+    surf = ax.plot_trisurf(a, b, err, triangles=tri.triangles, linewidth=0.2, antialiased=True, shade=False, cmap=cmap)
+    # apply per-triangle facecolors (based on gamma)
+    try:
+        surf.set_facecolors(facecolors)
+    except AttributeError:
+        # fallback for older matplotlib versions
+        surf.set_facecolor(facecolors)
+    surf.set_edgecolor((0,0,0,0.1))
+
+    # colorbar (create mappable for the colormap) showing gamma
+    mappable = cm.ScalarMappable(norm=norm, cmap=cmap)
+    mappable.set_array(tri_gamma)
+    cbar = fig.colorbar(mappable, ax=ax, shrink=0.75, pad=0.1)
+    cbar.set_label("gamma")
+
+    ax.set_xlabel("alpha")
+    ax.set_ylabel("beta")
+    ax.set_zlabel("error")
+    ax.set_title("error(alpha, beta) colored by gamma (converged only: {})".format(SHOW_ONLY_CONVERGED))
+
+    plt.tight_layout()
+    plt.show()
+
+if __name__ == "__main__":
+    main()

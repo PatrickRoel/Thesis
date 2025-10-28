@@ -1,4 +1,4 @@
-pressure,diameter,elements,alpha,beta,gamma,error,converged
+pressure,diameter,alpha,beta,gamma,error,converged
 0.3,0.2,-0.35,0.75,0.75,107.3983552618851,True
 0.3,0.2,-0.35,0.75,0.775,104.82060550984585,True
 0.3,0.2,-0.35,0.75,0.8,102.28435371180278,True
