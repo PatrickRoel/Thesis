@@ -40,7 +40,9 @@ def torsion(p,r,phi):
     C17 = -17703
     C18 = 358.05
     C19 = 0.0918
-    T = ((C13*r+C14)*p+(C15*r+C16))*np.arctan(((C17*r**4)*np.log(p)+(C18*r**3+C19))*np.deg2rad(phi))
+    c1 = ((C13*r+C14)*p+(C15*r+C16))
+    c2 = ((C17*r**4)*np.log(p)+(C18*r**3+C19))
+    T = c1*np.arctan(c2*np.deg2rad(phi))
     return T
 
 def plotinflatablebeam(p,d,ls,ax):
@@ -58,7 +60,7 @@ def plotinflatablebeam(p,d,ls,ax):
     ax.plot(phi, T,color="red",linestyle=ls,linewidth=1.5)
     return ax
 
-p_lst = [0.4] #bar
+p_lst = [0.3] #bar
 d_lst = [0.18] #m
 linestyles = ['-', '--']
 fig, ax = plt.subplots(figsize=(5,5))
@@ -85,7 +87,7 @@ from kite_fem.FEMStructure import FEM_structure
 
 def instiantiate(d,p):
     length  = 1  
-    elements = 5
+    elements =10
     initital_conditions = []
     for i in range(elements+1):
         initital_conditions.append([[i*length/elements, 0.0, 0.0], [0, 0, 0], 1, True if i==0 else False])
@@ -100,7 +102,7 @@ def solve_tip_load(inflatable_beam,tip_load):
     fe[1::6][-1] = -tip_load
     inflatable_beam.solve(        fe=fe,
             max_iterations=1000,
-            tolerance=0.0001,
+            tolerance=0.00001,
             step_limit=0.25,
             relax_init=0.5,
             relax_update=0.95,
@@ -108,7 +110,7 @@ def solve_tip_load(inflatable_beam,tip_load):
             I_stiffness=25
             )
     deflection = -inflatable_beam.coords_current[-2]*1000
-    inflatable_beam.reset()
+    inflatable_beam.reinitialise()
 
     return deflection
 
@@ -125,7 +127,7 @@ def solve_tip_moment(inflatable_beam,tip_moment):
             I_stiffness=25
             )
     rotation = -np.rad2deg(inflatable_beam.coords_rotations_current[-3])
-    inflatable_beam.reset()
+    inflatable_beam.reinitialise()
     return rotation
 
 pressures = p_lst
