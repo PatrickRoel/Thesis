@@ -106,7 +106,7 @@
         <mxCell id="tlqPNFLaRkIdFAI5_1Tn-80" value="&lt;div&gt;Kite&lt;/div&gt;&lt;div&gt;shape&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
           <mxGeometry x="590" y="320" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="tlqPNFLaRkIdFAI5_1Tn-81" value="&lt;div&gt;aerodynamic&lt;/div&gt;&lt;div&gt;forces&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+        <mxCell id="tlqPNFLaRkIdFAI5_1Tn-81" value="&lt;div&gt;Aerodynamic&lt;/div&gt;&lt;div&gt;forces&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
           <mxGeometry x="720" y="320" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="tlqPNFLaRkIdFAI5_1Tn-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.333;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="tlqPNFLaRkIdFAI5_1Tn-31" target="tlqPNFLaRkIdFAI5_1Tn-1">
