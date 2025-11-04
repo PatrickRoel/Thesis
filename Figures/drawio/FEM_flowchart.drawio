@@ -77,10 +77,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Kal5NQggoXqVx7HEElUz-25" value="&lt;div&gt;Aerodynamic&lt;/div&gt;&lt;div&gt;forces&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-          <mxGeometry x="670" y="189" width="120" height="40" as="geometry" />
+          <mxGeometry x="670" y="179" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Kal5NQggoXqVx7HEElUz-27" value="Kite shape" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-          <mxGeometry x="670" y="429" width="120" height="40" as="geometry" />
+          <mxGeometry x="670" y="419" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="08EF3w-kcmve0NrO_kMs-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;jumpStyle=gap;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="Kal5NQggoXqVx7HEElUz-29" target="Kal5NQggoXqVx7HEElUz-44" edge="1">
           <mxGeometry relative="1" as="geometry">
