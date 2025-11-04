@@ -31,7 +31,7 @@
         <mxCell id="ai-yAD_MabxzcYyzEMFq-124" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ai-yAD_MabxzcYyzEMFq-44" target="ai-yAD_MabxzcYyzEMFq-123">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ai-yAD_MabxzcYyzEMFq-44" value="&lt;div&gt;&amp;nbsp; Adapted surfplan&lt;/div&gt;&lt;div&gt;geometry&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-44" value="&lt;div&gt;&amp;nbsp; Adapted surfplan&lt;/div&gt;&lt;div&gt;Model&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
           <mxGeometry x="280" y="409" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="ai-yAD_MabxzcYyzEMFq-45" value="Vortex step method" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;fontSize=16;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
