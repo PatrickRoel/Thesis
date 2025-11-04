@@ -193,7 +193,7 @@
         <mxCell id="o54CC8JF-wLAvLKjvfyF-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tp6rhfujmvis_cF2Qg85-1" target="o54CC8JF-wLAvLKjvfyF-20">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="tp6rhfujmvis_cF2Qg85-1" value="&lt;div&gt;Surfplan model&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+        <mxCell id="tp6rhfujmvis_cF2Qg85-1" value="&lt;div&gt;Adapted&amp;nbsp;&lt;/div&gt;&lt;div&gt;surfplan model&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="670" y="-61" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="tp6rhfujmvis_cF2Qg85-7" value="Finite element model" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;fontSize=16;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
@@ -262,7 +262,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="o54CC8JF-wLAvLKjvfyF-20" value="Run surfplan adapter" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="o54CC8JF-wLAvLKjvfyF-20" value="&lt;div&gt;Extract structural&lt;/div&gt;&lt;div&gt;geometry&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="512.5" y="-61" width="120" height="40" as="geometry" />
         </mxCell>
       </root>
