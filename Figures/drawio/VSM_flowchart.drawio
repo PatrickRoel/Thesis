@@ -57,7 +57,7 @@
         <mxCell id="ai-yAD_MabxzcYyzEMFq-122" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ai-yAD_MabxzcYyzEMFq-120" target="ai-yAD_MabxzcYyzEMFq-23">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ai-yAD_MabxzcYyzEMFq-120" value="&lt;div&gt;Set up aerodynamic&lt;/div&gt;&lt;div&gt;geometry&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-120" value="&lt;div&gt;Set up vortex filaments&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="640" y="409" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="ai-yAD_MabxzcYyzEMFq-125" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ai-yAD_MabxzcYyzEMFq-123" target="ai-yAD_MabxzcYyzEMFq-120">
