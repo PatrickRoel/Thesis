@@ -103,8 +103,8 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="240" y="20" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="580" />
-              <mxPoint x="240" />
+              <mxPoint x="580" y="-10" />
+              <mxPoint x="240" y="-10" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -115,7 +115,7 @@
           <mxGeometry x="670" y="19" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="08EF3w-kcmve0NrO_kMs-7" value="&lt;div&gt;Set up mass&lt;/div&gt;&lt;div&gt;distribution&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="160" y="-61" width="120" height="40" as="geometry" />
+          <mxGeometry x="240" y="-61" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="08EF3w-kcmve0NrO_kMs-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="Kal5NQggoXqVx7HEElUz-25" target="08EF3w-kcmve0NrO_kMs-13" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -126,7 +126,7 @@
         <mxCell id="08EF3w-kcmve0NrO_kMs-13" value="&lt;div&gt;Adapt&amp;nbsp;forces to structural mesh&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="512.5" y="179" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="08EF3w-kcmve0NrO_kMs-31" value="Model setup" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=16;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
+        <mxCell id="08EF3w-kcmve0NrO_kMs-31" value="Model setup" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=16;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" parent="1" vertex="1">
           <mxGeometry x="120" y="-110" width="340" height="30" as="geometry" />
         </mxCell>
         <mxCell id="08EF3w-kcmve0NrO_kMs-38" value="" style="endArrow=none;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" edge="1">
@@ -238,12 +238,12 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="o54CC8JF-wLAvLKjvfyF-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="o54CC8JF-wLAvLKjvfyF-20" target="08EF3w-kcmve0NrO_kMs-7">
+        <mxCell id="o54CC8JF-wLAvLKjvfyF-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o54CC8JF-wLAvLKjvfyF-20">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="320" y="-40" as="targetPoint" />
+            <mxPoint x="300" y="-61" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="580" y="-81" />
-              <mxPoint x="220" y="-81" />
+              <mxPoint x="580" y="-80" />
+              <mxPoint x="300" y="-80" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -254,15 +254,13 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="300" y="-80" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="300" y="-80" />
-              <mxPoint x="300" y="-10" />
-              <mxPoint x="220" y="-10" />
+              <mxPoint x="220" y="-80" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="08EF3w-kcmve0NrO_kMs-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;jumpStyle=gap;" parent="1" target="Kal5NQggoXqVx7HEElUz-29" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="300" y="-10" as="sourcePoint" />
+            <mxPoint x="380" y="-80" as="sourcePoint" />
             <Array as="points">
               <mxPoint x="380" />
               <mxPoint x="380" />
