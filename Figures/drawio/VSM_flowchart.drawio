@@ -1,9 +1,135 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0" version="28.2.9">
   <diagram name="Page-1" id="ZH6GarEGKueP-TBPjH4g">
-    <mxGraphModel>
+    <mxGraphModel dx="1501" dy="793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;absoluteArcSize=1;arcSize=45;" vertex="1" parent="1">
+          <mxGeometry x="600" y="310" width="360" height="660" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;glass=0;shadow=0;arcSize=45;absoluteArcSize=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="350" width="160" height="609" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;glass=0;shadow=0;arcSize=45;absoluteArcSize=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="580" width="340" height="379" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-4" value="Solver loop" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=16;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" vertex="1" parent="1">
+          <mxGeometry x="615" y="590" width="330" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-5" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;absoluteArcSize=1;arcSize=45;" vertex="1" parent="1">
+          <mxGeometry x="610" y="350" width="340" height="219" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-23" value="&lt;div&gt;Set up AIC&lt;/div&gt;&lt;div&gt;induction matrix&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="489" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-36" value="Model setup" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=16;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="360" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-124" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ai-yAD_MabxzcYyzEMFq-44" target="ai-yAD_MabxzcYyzEMFq-123">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-44" value="&lt;div&gt;&amp;nbsp; Adapted surfplan&lt;/div&gt;&lt;div&gt;geometry&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="409" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-45" value="Vortex step method" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;fontSize=16;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="320" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-50" value="Interfacing" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=16;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="405" y="360" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ai-yAD_MabxzcYyzEMFq-54" target="ai-yAD_MabxzcYyzEMFq-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-54" value="Kite shape" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="801" width="120" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-121" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ai-yAD_MabxzcYyzEMFq-55" target="ai-yAD_MabxzcYyzEMFq-120">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="820" />
+              <mxPoint x="590" y="429" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-55" value="&lt;div&gt;Adapt geometry&lt;/div&gt;&lt;div&gt;to aerodynamic mesh&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="800" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-122" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ai-yAD_MabxzcYyzEMFq-120" target="ai-yAD_MabxzcYyzEMFq-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-120" value="&lt;div&gt;Set up aerodynamic&lt;/div&gt;&lt;div&gt;geometry&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="409" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-125" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ai-yAD_MabxzcYyzEMFq-123" target="ai-yAD_MabxzcYyzEMFq-120">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="389" />
+              <mxPoint x="730" y="389" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-123" value="&lt;div&gt;Extract aerodynamic&lt;/div&gt;&lt;div&gt;geometry&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="409" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-141" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ai-yAD_MabxzcYyzEMFq-132" target="ai-yAD_MabxzcYyzEMFq-140">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-132" value="&lt;div&gt;Initialise&amp;nbsp;&lt;/div&gt;&lt;div&gt;the circulation&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="640" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-144" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ai-yAD_MabxzcYyzEMFq-136" target="ai-yAD_MabxzcYyzEMFq-145">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="690" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-136" value="Interpolate coefficients and recalculate distribution" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="800" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-143" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ai-yAD_MabxzcYyzEMFq-140" target="ai-yAD_MabxzcYyzEMFq-136">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-140" value="&lt;div&gt;Calculate induced&lt;/div&gt;&lt;div&gt;velocity at each wing section&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;spacingBottom=-4;" vertex="1" parent="1">
+          <mxGeometry x="640" y="720" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-146" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ai-yAD_MabxzcYyzEMFq-145" target="ai-yAD_MabxzcYyzEMFq-132">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="890" y="900" />
+              <mxPoint x="890" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-157" value="$\Gamma = (1 - \alpha)\Gamma + \alpha\Gamma_{\text{new}}$" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;" vertex="1" connectable="0" parent="ai-yAD_MabxzcYyzEMFq-146">
+          <mxGeometry x="0.1341" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-152" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ai-yAD_MabxzcYyzEMFq-145" target="ai-yAD_MabxzcYyzEMFq-148">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-145" value="Converged" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="860" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-153" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;jumpStyle=gap;" edge="1" parent="1" source="ai-yAD_MabxzcYyzEMFq-148" target="ai-yAD_MabxzcYyzEMFq-149">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="890" />
+              <mxPoint x="580" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-148" value="Recalculate the angle of attack at 1/4 chord" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="880" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-155" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ai-yAD_MabxzcYyzEMFq-149" target="ai-yAD_MabxzcYyzEMFq-154">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-149" value="Calculate forces along the wing" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="640" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-154" value="&lt;div&gt;Aerodynamic&lt;/div&gt;&lt;div&gt;forces&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="641" width="120" height="39" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
