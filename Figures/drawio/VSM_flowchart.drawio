@@ -19,6 +19,9 @@
         <mxCell id="ai-yAD_MabxzcYyzEMFq-5" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;absoluteArcSize=1;arcSize=45;" vertex="1" parent="1">
           <mxGeometry x="610" y="350" width="340" height="219" as="geometry" />
         </mxCell>
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-158" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ai-yAD_MabxzcYyzEMFq-23" target="ai-yAD_MabxzcYyzEMFq-132">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="ai-yAD_MabxzcYyzEMFq-23" value="&lt;div&gt;Set up AIC&lt;/div&gt;&lt;div&gt;induction matrix&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="640" y="489" width="180" height="40" as="geometry" />
         </mxCell>
@@ -52,7 +55,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="ai-yAD_MabxzcYyzEMFq-55" value="&lt;div&gt;Adapt geometry&lt;/div&gt;&lt;div&gt;to aerodynamic mesh&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="440" y="800" width="120" height="40" as="geometry" />
+          <mxGeometry x="430" y="800" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="ai-yAD_MabxzcYyzEMFq-122" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ai-yAD_MabxzcYyzEMFq-120" target="ai-yAD_MabxzcYyzEMFq-23">
           <mxGeometry relative="1" as="geometry" />
@@ -82,7 +85,7 @@
             <mxPoint x="690" y="880" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ai-yAD_MabxzcYyzEMFq-136" value="Interpolate coefficients and recalculate distribution" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="ai-yAD_MabxzcYyzEMFq-136" value="Interpolate coefficients and recalculate circulation distribution" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="640" y="800" width="180" height="40" as="geometry" />
         </mxCell>
         <mxCell id="ai-yAD_MabxzcYyzEMFq-143" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ai-yAD_MabxzcYyzEMFq-140" target="ai-yAD_MabxzcYyzEMFq-136">
