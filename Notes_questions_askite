@@ -1,0 +1,13 @@
+
+
+ASkite 
+    struc_geometry
+        Questions
+        Why do we have le_diameter in strut_tubes and also in leading_edge_tubes?
+
+        Changes
+        - Moved bridle particles attched to wing to wing_particles. 
+        - Added constant : nodes per strut
+        
+
+

@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import os
+
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
 #bending
@@ -83,11 +84,11 @@ for mode in ["bending","torsion"]:
 import matplotlib.pyplot as plt
 import numpy as np
 from kite_fem.FEMStructure import FEM_structure
-
+from kite_fem.Plotting import plot_structure
 
 def instiantiate(d,p):
     length  = 1  
-    elements =10
+    elements = 50
     initital_conditions = []
     for i in range(elements+1):
         initital_conditions.append([[i*length/elements, 0.0, 0.0], [0, 0, 0], 1, True if i==0 else False])
@@ -110,9 +111,13 @@ def solve_tip_load(inflatable_beam,tip_load):
             I_stiffness=25
             )
     deflection = -inflatable_beam.coords_current[-2]*1000
-    inflatable_beam.reinitialise()
+    collapsed = False
+    for beam in inflatable_beam.beam_elements:
+        if beam.collapsed == True:
+            collapsed = True
+    inflatable_beam.reset()
 
-    return deflection
+    return deflection, collapsed
 
 def solve_tip_moment(inflatable_beam,tip_moment):
     fe = np.zeros(inflatable_beam.N)
@@ -127,7 +132,7 @@ def solve_tip_moment(inflatable_beam,tip_moment):
             I_stiffness=25
             )
     rotation = -np.rad2deg(inflatable_beam.coords_rotations_current[-3])
-    inflatable_beam.reinitialise()
+    inflatable_beam.reset()
     return rotation
 
 pressures = p_lst
@@ -144,15 +149,17 @@ tip_moments = np.arange(5,120,10)
 for inflatable_beam in inflatable_beams:
     deflections = []
     rotations = []
-    for tip_load in tip_loads:
-        deflection = solve_tip_load(inflatable_beam,tip_load)
-        deflections.append(deflection)
-    for tip_moment in tip_moments:
-        rotation = solve_tip_moment(inflatable_beam,tip_moment)
-        rotations.append(rotation)
-    ax.scatter(rotations,tip_moments,marker="+",zorder=20)
-    ax.scatter(deflections,tip_loads,marker="+",zorder=20)
+    collapsed = []
 
+    for tip_load in tip_loads:
+        deflection,collapse = solve_tip_load(inflatable_beam,tip_load)
+        deflections.append(deflection)
+        collapsed.append(collapse)
+    # for tip_moment in tip_moments:
+    #     rotation = solve_tip_moment(inflatable_beam,tip_moment)
+    #     rotations.append(rotation)
+    # ax.scatter(rotations,tip_moments,marker="+",zorder=20)
+    ax.scatter(deflections,tip_loads,marker="+",zorder=20)
 
 
 
@@ -169,3 +176,4 @@ ax.set_ylim(0,160)
 fig.tight_layout()
 
 fig.savefig(os.path.join(script_dir, 'Inflatablebeamdeflections.png'))
+

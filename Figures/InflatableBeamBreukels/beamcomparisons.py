@@ -24,8 +24,8 @@ def solve_tip_load(inflatable_beam,tip_load):
     converged = inflatable_beam.solve(        fe=fe,
             max_iterations=1000,
             tolerance=0.00001,
-            step_limit=0.15,
-            relax_init=0.5,
+            step_limit=0.05,
+            relax_init=0.25,
             relax_update=0.95,
             k_update=1,
             I_stiffness=25
@@ -34,10 +34,10 @@ def solve_tip_load(inflatable_beam,tip_load):
     inflatable_beam.reinitialise()
     return deflection,converged
 
-d = 0.38
-p = 0.3
+d = 0.35
+p = 0.2
 
-beam2 = instiantiate(d,p,3,3)
+beam2 = instiantiate(d,p,2,2)
 
 
 loads = np.linspace(0,100,20)
@@ -60,7 +60,7 @@ plt.plot(defl2_lst,load_lst,label="L=2m target")
 
 
 
-beam = instiantiate(d,p,3,1)
+beam = instiantiate(d,p,2,3)
 
 for load in load_lst:
     defl,converged = solve_tip_load(beam,load)
