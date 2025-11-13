@@ -1,0 +1,7 @@
+Grid size,Number of nodes,FEM solver time [s],PSM solver time [s],Maximum difference [mm]
+3x3,13,3.23e-02,7.91e-02,5.57e-02
+5x5,41,1.06e-01,4.10e-01,1.04e-01
+7x7,85,2.66e-01,1.68e+00,1.61e-01
+9x9,145,7.10e-01,2.92e+00,2.68e-01
+11x11,221,1.61e+00,5.95e+00,3.76e-01
+13x13,313,3.09e+00,1.81e+01,4.87e-01
