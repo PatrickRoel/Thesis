@@ -61,9 +61,9 @@ def plotinflatablebeam(p,d,ls,ax):
     ax.plot(phi, T,color="red",linestyle=ls,linewidth=1.5)
     return ax
 
-p_lst = [0.3] #bar
-d_lst = [0.18] #m
-linestyles = ['-', '--']
+p_lst = [0.3,0.5] #bar
+d_lst = [0.16,0.16] #m
+linestyles = ['-', '--','-','--']
 fig, ax = plt.subplots(figsize=(5,5))
 
 
@@ -88,7 +88,7 @@ from kite_fem.Plotting import plot_structure
 
 def instiantiate(d,p):
     length  = 1  
-    elements = 10
+    elements = 1
     initital_conditions = []
     for i in range(elements+1):
         initital_conditions.append([[i*length/elements, 0.0, 0.0], [0, 0, 0], 1, True if i==0 else False])
@@ -155,11 +155,11 @@ for inflatable_beam in inflatable_beams:
         deflection,collapse = solve_tip_load(inflatable_beam,tip_load)
         deflections.append(deflection)
         collapsed.append(collapse)
-    # for tip_moment in tip_moments:
-    #     rotation = solve_tip_moment(inflatable_beam,tip_moment)
-    #     rotations.append(rotation)
-    # ax.scatter(rotations,tip_moments,marker="+",zorder=20)
-    ax.scatter(deflections,tip_loads,marker="+",zorder=20)
+    for tip_moment in tip_moments:
+        rotation = solve_tip_moment(inflatable_beam,tip_moment)
+        rotations.append(rotation)
+    ax.scatter(rotations,tip_moments,marker="x",zorder=20,color="black")
+    ax.scatter(deflections,tip_loads,marker="+",zorder=20,color="red")
 
 
 
@@ -171,9 +171,9 @@ ax.set_ylabel("Tip force [N] / Tip moment [Nm]")
 # ax.minorticks_on() 
 ax.grid(which="major",color="grey")
 # ax.grid(which="minor",color="lightgrey")
-ax.set_xlim(0,140)
-ax.set_ylim(0,160)
+ax.set_xlim(0,120)
+ax.set_ylim(0,120)
 fig.tight_layout()
 
-fig.savefig(os.path.join(script_dir, 'Inflatablebeamdeflections.png'))
+fig.savefig(os.path.join(script_dir, 'Inflatablebeamdeflections.pdf'))
 
