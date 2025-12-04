@@ -1,0 +1,135 @@
+%% Creator: Inkscape 1.4.2 (ebf0e940d0, 2025-05-08), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'Bridle_config.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{597.23998062bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.97409845)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{Bridle_config.pdf}}%
+    \put(0.4170434,0.75852988){\color[rgb]{0,0,1}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}br1\end{tabular}}}}%
+    \put(0.06419617,0.80296077){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}a5\\95\\\end{tabular}}}}%
+    \put(0.53740587,0.96175928){\color[rgb]{0,0,1}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}a1\end{tabular}}}}%
+    \put(0.53759476,0.94423276){\color[rgb]{0,0,1}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}b1\end{tabular}}}}%
+    \put(0.53814159,0.92964982){\color[rgb]{0,0,1}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}c1\\\end{tabular}}}}%
+    \put(0.53704789,0.88517186){\color[rgb]{0,0,1}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}d1\end{tabular}}}}%
+    \put(0.68617675,0.95173085){\color[rgb]{0,0,1}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}a2\end{tabular}}}}%
+    \put(0.68598533,0.93425279){\color[rgb]{0,0,1}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}b2\end{tabular}}}}%
+    \put(0.68486939,0.9159723){\color[rgb]{0,0,1}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}c2\end{tabular}}}}%
+    \put(0.68304667,0.87734454){\color[rgb]{0,0,1}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}d2\end{tabular}}}}%
+    \put(0.80113303,0.9318082){\color[rgb]{0,0,1}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}a3\end{tabular}}}}%
+    \put(0.80184393,0.91477245){\color[rgb]{0,0,1}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}b3\end{tabular}}}}%
+    \put(0.8003672,0.89638518){\color[rgb]{0,0,1}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}c3\end{tabular}}}}%
+    \put(0.79772684,0.85986528){\color[rgb]{0,0,1}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}d3\end{tabular}}}}%
+    \put(0.92167295,0.89027589){\color[rgb]{0,0,1}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}a4\end{tabular}}}}%
+    \put(0.92057922,0.87751581){\color[rgb]{0,0,1}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}b4\end{tabular}}}}%
+    \put(0.98000459,0.81626749){\color[rgb]{0,0,1}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}a5\end{tabular}}}}%
+    \put(0.30512465,0.76064757){\color[rgb]{0,0,1}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}br2\end{tabular}}}}%
+    \put(0.19413207,0.76333118){\color[rgb]{0,0,1}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}br3\end{tabular}}}}%
+    \put(0.11895347,0.77773714){\color[rgb]{0,0,1}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}br4\end{tabular}}}}%
+    \put(0.0069106,0.75867724){\color[rgb]{0,0,1}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}br5\end{tabular}}}}%
+    \put(0.00941994,0.81567603){\color[rgb]{0,0,1}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}a5\end{tabular}}}}%
+    \put(0.26867822,0.6538509){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}br3\\4094\end{tabular}}}}%
+    \put(0.33334147,0.65458704){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}br2\\4180\end{tabular}}}}%
+    \put(0.42957773,0.65377601){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}br1 \\4407\end{tabular}}}}%
+    \put(0.31623245,0.53935878){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}BR35\\2045\end{tabular}}}}%
+    \put(0.17917587,0.65359763){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}br4\\3550\end{tabular}}}}%
+    \put(0.44020245,0.28013782){\color[rgb]{1,0,1}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}br-main extension\end{tabular}}}}%
+    \put(0.45313529,0.13750549){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}PL\\3335\end{tabular}}}}%
+    \put(0.37790783,0.23411188){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}brmain\\4856\end{tabular}}}}%
+    \put(0.42595767,0.03614057){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}SL\\1800\end{tabular}}}}%
+    \put(0.03417465,0.68029687){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}br5\\12168\end{tabular}}}}%
+    \put(0.01759987,0.72259029){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}115\end{tabular}}}}%
+    \put(-0.00038825,0.74103925){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}1420\end{tabular}}}}%
+    \put(0.40368168,0.53961836){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}BR12\\2333\end{tabular}}}}%
+    \put(0.40295256,0.36389391){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}BRI\\610\end{tabular}}}}%
+    \put(0.60406333,0.89738391){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}ab1 \\\\\end{tabular}}}}%
+    \put(0.61456245,0.85310767){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}ab2 \\\end{tabular}}}}%
+    \put(0.71251122,0.86721687){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}ab3 \\\\\end{tabular}}}}%
+    \put(0.75254746,0.78652656){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}cd3\\\\\end{tabular}}}}%
+    \put(0.65121879,0.90965016){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}c2 \\400\\\end{tabular}}}}%
+    \put(0.75043097,0.89001501){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}c3 \\400\\\end{tabular}}}}%
+    \put(0.78310777,0.83992121){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}d3 \\370\\\end{tabular}}}}%
+    \put(0.67374338,0.85853279){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}d2 \\375\\\end{tabular}}}}%
+    \put(0.56879613,0.91897419){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}c1\\445\\\end{tabular}}}}%
+    \put(0.53801703,0.86724696){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}d1\\405\\\end{tabular}}}}%
+    \put(0.55050662,0.81988107){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l} \\3261\\\end{tabular}}}}%
+    \put(0.6562155,0.80038212){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l} \\3180\\\end{tabular}}}}%
+    \put(0.74851506,0.78782435){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l} \\3076\\\end{tabular}}}}%
+    \put(0.5523746,0.81923923){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}cd1 \\\end{tabular}}}}%
+    \put(0.65889942,0.79906493){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}cd2 \\\end{tabular}}}}%
+    \put(0.63712989,0.69077143){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}A2 \\1798\end{tabular}}}}%
+    \put(0.56322072,0.69077145){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}A1\\1860\end{tabular}}}}%
+    \put(0.78176551,0.69084363){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}A4 \\2877\end{tabular}}}}%
+    \put(0.69431035,0.69104724){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}A3\\1791\end{tabular}}}}%
+    \put(0.59111766,0.50085066){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}A12\\3670\end{tabular}}}}%
+    \put(0.71803347,0.50407581){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}A35\\3360\end{tabular}}}}%
+    \put(0.90558244,0.80327252){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}a5\\...\\\end{tabular}}}}%
+    \put(0.59371576,0.14533112){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}amain\\3903\end{tabular}}}}%
+    \put(0.57679689,0.9570431){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}330\end{tabular}}}}%
+    \put(0.64453997,0.94922845){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}260.\end{tabular}}}}%
+    \put(0.75364759,0.92287874){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}260\end{tabular}}}}%
+    \put(0.88040252,0.89776863){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}220\end{tabular}}}}%
+    \put(0.97409917,0.79554649){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}278\end{tabular}}}}%
+    \put(-0.00132973,0.79976143){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}278\end{tabular}}}}%
+    \put(-0.28129799,0.37452794){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}BR1BR2\\236\end{tabular}}}}%
+    \put(0.44348564,0.28379969){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}\\70\end{tabular}}}}%
+    \put(0.7952842,0.51655936){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}\\11420\end{tabular}}}}%
+    \put(0.60348718,0.52567378){\color[rgb]{1,0,1}\transparent{0.60000002}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}AI\end{tabular}}}}%
+    \put(0.72912721,0.52029342){\color[rgb]{1,0,1}\transparent{0.60000002}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}AII\end{tabular}}}}%
+    \put(0.79965912,0.51874315){\color[rgb]{1,0,1}\transparent{0.60000002}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}AIII\end{tabular}}}}%
+    \put(0.32736724,0.55529203){\color[rgb]{1,0,1}\transparent{0.60000002}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}BRI\end{tabular}}}}%
+    \put(0.41480113,0.55492767){\color[rgb]{1,0,1}\transparent{0.60000002}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}BRII\end{tabular}}}}%
+    \put(0.40568675,0.38430723){\color[rgb]{1,0,1}\transparent{0.60000002}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}BR-main 1\end{tabular}}}}%
+    \put(0.32186217,0.31621343){\color[rgb]{1,0,1}\transparent{0.60000002}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}BR-main 2\end{tabular}}}}%
+    \put(0.4038109,0.24743944){\color[rgb]{1,0,1}\transparent{0.60000002}\makebox(0,0)[lt]{\smash{\begin{tabular}[t]{l}M\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{Bridle_config.pdf}}%
+  \end{picture}%
+\endgroup%
