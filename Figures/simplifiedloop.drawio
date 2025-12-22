@@ -1,0 +1,42 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:146.0) Gecko/20100101 Firefox/146.0" version="29.2.7">
+  <diagram name="Page-1" id="5kwsJV-_t2RIDBVE9Q9P">
+    <mxGraphModel dx="1097" dy="592" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uB2P6YwH9mgZ9DP5M3R2-12" edge="1" parent="1" source="n9SaQyXTUXRmUdja2Maz-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="uB2P6YwH9mgZ9DP5M3R2-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uB2P6YwH9mgZ9DP5M3R2-13" edge="1" parent="1" source="n9SaQyXTUXRmUdja2Maz-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="uB2P6YwH9mgZ9DP5M3R2-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n9SaQyXTUXRmUdja2Maz-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Update displacement&lt;/div&gt;&lt;div&gt;&lt;b&gt;u &lt;/b&gt;+=&lt;b&gt;&amp;nbsp;&lt;/b&gt;Δ&lt;b&gt;u&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="140" x="120" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="uB2P6YwH9mgZ9DP5M3R2-9" edge="1" parent="1" source="uB2P6YwH9mgZ9DP5M3R2-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="uB2P6YwH9mgZ9DP5M3R2-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uB2P6YwH9mgZ9DP5M3R2-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Calculate residual forces&lt;/div&gt;&lt;div&gt;&lt;b&gt;r&lt;/b&gt;(&lt;b&gt;u&lt;/b&gt;)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="140" x="320" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="uB2P6YwH9mgZ9DP5M3R2-14" edge="1" parent="1" source="uB2P6YwH9mgZ9DP5M3R2-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="n9SaQyXTUXRmUdja2Maz-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="340" />
+              <mxPoint x="190" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uB2P6YwH9mgZ9DP5M3R2-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Solve linear system&lt;/div&gt;&lt;div&gt;&lt;b&gt;Kr&amp;nbsp;&lt;/b&gt;=&lt;b&gt;&amp;nbsp;&lt;/b&gt;Δ&lt;b&gt;u&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="140" x="520" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="uB2P6YwH9mgZ9DP5M3R2-10" edge="1" parent="1" source="uB2P6YwH9mgZ9DP5M3R2-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="uB2P6YwH9mgZ9DP5M3R2-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uB2P6YwH9mgZ9DP5M3R2-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Set up stiffness matrix&lt;/div&gt;&lt;div&gt;&lt;b&gt;K&lt;/b&gt;(&lt;b&gt;u&lt;/b&gt;)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="140" x="320" y="240" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
