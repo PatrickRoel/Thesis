@@ -23,9 +23,9 @@ def compare(filename: str, fig=None, axes=None):
 
     # Create figure with 3 subplots if not provided
     if fig is None or axes is None:
-        fig = plt.figure(figsize=(14, 4))
+        fig = plt.figure(figsize=(14, 3))
         # Create GridSpec with width ratios: Top (2), Side (3), Front (7)
-        gs = gridspec.GridSpec(1, 4, figure=fig, width_ratios=[1.5, 2.7, 7, 0])
+        gs = gridspec.GridSpec(1, 4, figure=fig, width_ratios=[7,2.5, 7, 0])
         axes = [
             fig.add_subplot(gs[0, 0]),  # XY view (Top)
             fig.add_subplot(gs[0, 2]),  # YZ view (Front) - moved to right
@@ -260,8 +260,8 @@ def compare(filename: str, fig=None, axes=None):
             if group_name != "CAN":
                 xyz = grouped_coords[group_name]
                 label = "Measurements" if (ax_idx == 1 and first_measurement) else None
-                if ax_idx == 0:  # XY view (Top)
-                    ax.plot(xyz[:, 0], xyz[:, 1], color="black", linewidth=2.5)
+                if ax_idx == 0:  # XY view (Top) - rotated: Y on x-axis, X on y-axis
+                    ax.plot(xyz[:, 1], xyz[:, 0], color="black", linewidth=2.5)
                 elif ax_idx == 1:  # YZ view (Front)
                     ax.plot(xyz[:, 1], -xyz[:, 2], color="black", linewidth=2.5, label=label)
                     first_measurement = False
@@ -279,9 +279,9 @@ def compare(filename: str, fig=None, axes=None):
             n2_coords = coords[n2]
             
             label = "Model results" if (ax_idx == 1 and first_model) else None
-            if ax_idx == 0:  # XY view (Top)
-                ax.plot([n1_coords[0], n2_coords[0]], 
-                       [n1_coords[1], n2_coords[1]], color="red", linewidth=2.5)
+            if ax_idx == 0:  # XY view (Top) - rotated: Y on x-axis, X on y-axis
+                ax.plot([n1_coords[1], n2_coords[1]], 
+                       [n1_coords[0], n2_coords[0]], color="red", linewidth=2.5)
             elif ax_idx == 1:  # YZ view (Front)
                 ax.plot([n1_coords[1], n2_coords[1]], 
                        [-n1_coords[2], -n2_coords[2]], color="red", linewidth=2.5, label=label)
@@ -291,20 +291,20 @@ def compare(filename: str, fig=None, axes=None):
                        [-n1_coords[2], -n2_coords[2]], color="red", linewidth=2.5)
         
         # Set labels and aspect ratio
-        if ax_idx == 0:  # XY view (Top)
-            ax.set_xlabel('x [m]', fontsize=18)
-            ax.set_ylabel('y [m]', fontsize=18)
+        if ax_idx == 0:  # XY view (Top) - rotated: Y on x-axis, X on y-axis
+            ax.set_xlabel('y [m]', fontsize=18)
+            ax.set_ylabel('x [m]', fontsize=18)
             # ax.set_title('Top View (XY)', fontsize=14, fontweight='bold')
-            # Use actual data ranges
-            ax.set_xlim(-0.75,3.75)
-            ax.set_ylim(-5.25,5.25)
+            # Use actual data ranges (swapped)
+            ax.set_xlim(-4.75,4.75)
+            ax.set_ylim(-0.25,3)
         elif ax_idx == 1:  # YZ view (Front)
             ax.set_xlabel('y [m]', fontsize=18)
             ax.set_ylabel('z [m]', fontsize=18)
             # ax.set_title('Front View (YZ)', fontsize=14, fontweight='bold')
             # Use actual Y range, tighter Z range for zoomed in view
             ax.set_xlim(-4.75,4.75)
-            ax.set_ylim(-0.5,3)
+            ax.set_ylim(-0.25,3)
             # Add legend slightly above center
             ax.legend(loc='center', bbox_to_anchor=(0.5, 0.6), fontsize=14, framealpha=0.9)
         elif ax_idx == 2:  # XZ view (Side)
@@ -312,8 +312,8 @@ def compare(filename: str, fig=None, axes=None):
             ax.set_ylabel('z [m]', fontsize=18)
             # ax.set_title('Side View (XZ)', fontsize=14, fontweight='bold')
             # Use actual X range, common Z range with margin for vertical alignment
-            ax.set_xlim(-0.25,3.25)
-            ax.set_ylim(-1,4)
+            ax.set_xlim(-0.25,3)
+            ax.set_ylim(-0.25,3)
         # Y-axis is fixed, X-axis adjusts to maintain equal aspect (1:1)
         ax.set_aspect('equal', adjustable='datalim')
         ax.tick_params(axis='both', which='major', labelsize=18)
