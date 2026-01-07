@@ -3,8 +3,8 @@
 
 <svg
    width="173.34056mm"
-   height="34.57267mm"
-   viewBox="0 0 173.34056 34.57267"
+   height="38.351696mm"
+   viewBox="0 0 173.34056 38.351696"
    version="1.1"
    id="svg1"
    inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
@@ -26,15 +26,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="1.3632986"
-     inkscape:cx="293.77277"
-     inkscape:cy="-41.443599"
+     inkscape:zoom="1.8419388"
+     inkscape:cx="16.558639"
+     inkscape:cy="87.679353"
      inkscape:window-width="1920"
      inkscape:window-height="1024"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g1" />
+     inkscape:current-layer="layer1" />
   <defs
      id="defs1">
     <clipPath
@@ -161,8 +161,8 @@
        refY="0"
        orient="auto-start-reverse"
        inkscape:stockid="Triangle arrow"
-       markerWidth="0.3"
-       markerHeight="0.3"
+       markerWidth="0.30000001"
+       markerHeight="0.30000001"
        viewBox="0 0 1 1"
        inkscape:isstock="true"
        inkscape:collect="always"
@@ -188,12 +188,32 @@
          d="M 207.74226,2770.5607 H 727.38774 V 2846.24 H 207.74226 Z"
          id="path44-2-3" />
     </clipPath>
+    <marker
+       style="overflow:visible"
+       id="Triangle-6-3"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="0.30000001"
+       markerHeight="0.30000001"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid"
+       markerUnits="userSpaceOnUse">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135-6-8" />
+    </marker>
   </defs>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-27.269297,-66.166429)">
+     transform="translate(-27.269297,-61.03407)">
     <g
        id="Axes"
        style="display:inline"
@@ -604,28 +624,41 @@
        id="text29-9"
        xml:space="preserve"
        style="font-size:3.52778px;display:inline;stroke-width:0.352778"
-       x="152.99161"
-       y="70.031761"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans'"
+       x="153.90834"
+       y="63.830475"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans'"
          id="tspan57">Bridle attachment point</tspan></text>
     <circle
        style="fill:#ff0000;fill-opacity:1;stroke:#1a1a1a;stroke-width:0.187312;stroke-dasharray:none"
        id="path30-78-0"
-       cx="150.98729"
-       cy="68.430084"
+       cx="151.37486"
+       cy="62.228798"
        r="1.1010722" />
     <text
        id="text29-9-4"
        xml:space="preserve"
        style="font-size:3.52778px;display:inline;stroke-width:0.352778"
-       x="153.17787"
-       y="74.130386"><tspan
+       x="154.0946"
+       y="67.9291"><tspan
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans'"
          id="tspan58">Chord line</tspan></text>
+    <text
+       id="text29-9-4-7"
+       xml:space="preserve"
+       style="font-size:3.52778px;display:inline;stroke-width:0.352778"
+       x="154.09244"
+       y="72.276955"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans'"
+         id="tspan58-7">Projection onto chord</tspan></text>
     <path
        style="fill:#666666;fill-opacity:0.298039;stroke:#1a1a1a;stroke-width:0.750094;stroke-dasharray:1.50019, 0.750094;stroke-dashoffset:0"
-       d="m 149.06981,73.094375 h 4.1385 z"
+       d="m 149.45739,66.893089 h 4.1385 z"
        id="path29-1"
        sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:#ff0000;fill-opacity:1;stroke:#1a1a1a;stroke-width:0.750094;stroke-miterlimit:3.6;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#Triangle-6-3)"
+       d="m 149.37227,71.048765 2.73187,0.01386"
+       id="path40-2-4"
+       sodipodi:nodetypes="cc" />
   </g>
 </svg>
