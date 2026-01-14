@@ -108,9 +108,9 @@ def compare_collapse_deflection(d,p,length,elements,max_range):
 
 d = 0.25
 p = 0.7
-Lengths = [1,2,3,4,5,6]
-Elements = [6,5,4,3,2,1]
-max_range = 2
+Lengths = [1,2,4,5,6]
+Elements = [3,2,1]
+max_range = 3
 Length_array = []
 Error_array = []
 for length in Lengths:
@@ -119,9 +119,9 @@ for length in Lengths:
         error,errorpercentage,converged = compare_collapse_deflection(d,p,length,element,max_range)
         norm_error = error/L_el/1000
         if converged:
-            plt.scatter(L_el,norm_error,marker="+",color="black")
+            plt.scatter(L_el,errorpercentage,marker="+",color="black")
             Length_array.append(L_el)
-            Error_array.append(norm_error)
+            Error_array.append(errorpercentage)
 
 plt.legend()
 plt.grid()
@@ -137,7 +137,7 @@ csv_path = os.path.join(script_dir, "beam_comparison_results.csv")
 # Save to CSV
 with open(csv_path, 'w', newline='') as f:
     writer = csv.writer(f)
-    writer.writerow(['Element Length (m)', 'Normalised error (-)'])
+    writer.writerow(['Element Length (m)', 'Deflection error (%)'])
     for length, error in zip(Length_array, Error_array):
         writer.writerow([length, error])
 

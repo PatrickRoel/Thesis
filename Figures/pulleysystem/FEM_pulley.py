@@ -13,25 +13,28 @@ pulley_matrix = [[0,4,1,5000,0,l0],[2,5,3,5000,0,l0],[4,6,5,5000,0,l0]]
 
 Pulleys = FEM_structure(initial_conditions, pulley_matrix = pulley_matrix)
 fe = np.zeros(Pulleys.N)
+fx = np.tan(np.deg2rad(15))*100
+fy = -100
 fe[(Pulleys.num_nodes-1)*6+1] = -100
 fe[(Pulleys.num_nodes-1)*6] = np.tan(np.deg2rad(15))*100
 
-ax1,fig1 = plot_structure(Pulleys,fe=fe, plot_displacements=False,fe_magnitude=0.35,plot_2d=True,e_colors = ['red', 'blue', 'black', 'green'] ,v_colors = ['red', 'darkgreen'],n_scale = [35,35,35])
-Pulleys.solve(fe = fe, tolerance=1e-3, max_iterations=5000, step_limit=0.3, relax_init=0.5,relax_update=0.95, k_update=1)
-ax2,fig2 = plot_structure(Pulleys, fe=fe, fe_magnitude=0.35,plot_2d=True,  e_colors = ['red', 'blue', 'black', 'green'] ,v_colors = ['red', 'darkgreen'],n_scale = [35,35,35])
+ax1,fig1 = plot_structure(Pulleys,fe=fe, plot_external_forces=True,plot_displacements=False,fe_magnitude=0.35,plot_2d=True,e_colors = ['red', 'blue', 'black', 'green'] ,v_colors = ['red', 'darkgreen'],n_scale = [35,35,35])
+Pulleys.solve(fe = fe, tolerance=1e-3, convergence_criteria="residual", max_iterations=5000, step_limit=0.3, relax_init=0.5,relax_update=0.95, k_update=1)
+ax2,fig2 = plot_structure(Pulleys, fe=fe, plot_external_forces=True,fe_magnitude=0.35,plot_2d=True,  e_colors = ['red', 'blue', 'black', 'green'] ,v_colors = ['red', 'darkgreen'],n_scale = [35,35,35])
 
 
-
-points = [[0.5,0,0],[1.5,0,0],[2.5,0,0]]
 coords = Pulleys.coords_current
 coords = coords.reshape(-1, 3)
 connections = [[0,4],[1,6],[2,5]]
+point1 = coords[4]+(coords[4]-coords[6])*0.67
+point2 = coords[6]+(np.array([fx,fy,0]))*-0.0177
+point3 = coords[5]+(coords[5]-coords[6])*1.18
+points = [point1,point2,point3]
+
 for connection in connections:
     xyz1 = points[connection[0]]
     xyz2 = coords[connection[1]]
     ax2.plot([xyz1[0], xyz2[0]], [xyz1[1], xyz2[1]], '--', linewidth=1, color="black")
-
-
 
 
 def plot_arc(center,point1,point2,scale):
@@ -72,7 +75,7 @@ for center,point1,point2,scale in zip(centers,points1,points2,scales):
 # ax2.set_title("Deformed Configuration")
 fontsize = 15
 ax2.text(0.75, -0.35, r'$\alpha_1$', fontsize=fontsize, ha='center', va='center')
-ax2.text(0.95, -0.27, r'$\alpha_2$', fontsize=fontsize, ha='center', va='center')
+ax2.text(1.0, -0.27, r'$\alpha_2$', fontsize=fontsize, ha='center', va='center')
 ax2.text(1.8, -1.2, r'$\beta_1$', fontsize=fontsize, ha='center', va='center')
 ax2.text(2.1, -1.18, r'$\beta_2$', fontsize=fontsize, ha='center', va='center')
 ax2.text(2.25, -0.5, r'$\gamma_1$', fontsize=fontsize, ha='center', va='center')
@@ -107,9 +110,16 @@ ax1.set_ylim(-2.15, 0.15)
 ax2.set_ylim(-2.15, 0.15)
 ax1.grid()
 ax2.grid()
+
+# Set larger font sizes for axis labels and ticks
+for ax in [ax1, ax2]:
+    ax.set_xlabel(ax.get_xlabel(), fontsize=14)
+    ax.set_ylabel(ax.get_ylabel(), fontsize=14)
+    ax.tick_params(axis='both', which='major', labelsize=12)
+
 # ax1.legend()
 
-ax2.legend()
+ax2.legend(fontsize=12)
 
 def calculate_angle(line1, line2):
     """
@@ -171,10 +181,14 @@ headers = ['alpha1', 'alpha2', 'beta1', 'beta2', 'gamma1', 'gamma2']
 with open('angles.csv', 'w', newline='') as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow(headers)
-    writer.writerow(angles)
+    writer.writerow([f'{angle:.2f}' for angle in angles])
 
 # ax1.set_axis_off()
 # ax2.set_axis_off()
+
+
+
+
 
     
 plt.show()

@@ -12,7 +12,7 @@ def import_data(file_name):
     """
     Import data from a CSV file.
     """
-    path = os.path.join(script_dir, '..', 'Results', file_name)
+    path = os.path.join(script_dir, file_name)
     data = pd.read_csv(path)
     dictionary = {col: data[col].tolist() for col in data.columns}
     return dictionary
@@ -20,9 +20,9 @@ def import_data(file_name):
 PSM2D = import_data("PSM2D.csv")
 PSM3D = import_data("PSM3D.csv")
 Literature = import_data("Literature.csv")
-FEM_timoshenko2 = import_data("FEM_timoshenko2Node.csv")
-FEM_timoshenko4 = import_data("FEM_timoshenko4Node.csv")
-FEM_timoshenko6 = import_data("FEM_timoshenko6Node.csv")
+FEM_timoshenko2 = import_data("FEM_timoshenko2node.csv")
+FEM_timoshenko4 = import_data("FEM_timoshenko4node.csv")
+FEM_timoshenko6 = import_data("FEM_timoshenko6node.csv")
 FEM_timoshenko2_lowdeflection = import_data("FEM_timoshenko2node_lowdeflection.csv")
 FEM_timoshenko4_lowdeflection = import_data("FEM_timoshenko4node_lowdeflection.csv")
 FEM_timoshenko6_lowdeflection = import_data("FEM_timoshenko4node_lowdeflection.csv")
@@ -42,6 +42,9 @@ L_ratios = np.unique_values(L_ratio)
 fig1, ax1 = plt.subplots(figsize=(4,4))
 fig2, ax2 = plt.subplots(figsize=(4,4))
 fig3, ax3 = plt.subplots(figsize=(4,4))
+fig5, ax5 = plt.subplots(figsize=(4,4))
+fig6, ax6 = plt.subplots(figsize=(4,4))
+fig7, ax7 = plt.subplots(figsize=(4,4))
 
 for i in [0,2]:
     Bool = np.zeros_like(L_ratio,dtype=bool)
@@ -50,6 +53,9 @@ for i in [0,2]:
     ax1.plot(Vertical_disp[Bool],Load_param[Bool], label = f"PSM, DOF = {DOF}",color=colors[i],)
     ax2.plot(Horizontal_disp[Bool],Load_param[Bool], label = f"PSM, DOF = {DOF}",color=colors[i])
     ax3.plot(Beam_angle[Bool],Load_param[Bool], label = f"PSM, DOF = {DOF}",color=colors[i])
+    ax5.plot(Vertical_disp[Bool],Load_param[Bool], label = f"PSM, DOF = {DOF}",color=colors[i],)
+    ax6.plot(Horizontal_disp[Bool],Load_param[Bool], label = f"PSM, DOF = {DOF}",color=colors[i])
+    ax7.plot(Beam_angle[Bool],Load_param[Bool], label = f"PSM, DOF = {DOF}",color=colors[i])
 
 ax1.plot(Literature["Vertical_disp"],Literature["Load_param"], linestyle="-",color="black",label="Mattiasson")
 ax2.plot(Literature["Horizontal_disp"],Literature["Load_param"], linestyle="-",color="black",label="Mattiasson")
@@ -122,46 +128,45 @@ fig3.savefig(os.path.join(script_dir, '..', 'Figures', 'Cantilever_Beam_angle.pd
 fig4.savefig(os.path.join(script_dir, '..', 'Figures', 'Cantilever_PSM_Force_angle.pdf'))
 
 
-fig5, ax5 = plt.subplots(figsize=(4,4))
-fig6, ax6 = plt.subplots(figsize=(4,4))
-fig7, ax7 = plt.subplots(figsize=(4,4))
+
 
 ax5.plot(Literature["Vertical_disp"],Literature["Load_param"], linestyle="-",color="black",label="Mattiasson")
 ax6.plot(Literature["Horizontal_disp"],Literature["Load_param"], linestyle="-",color="black",label="Mattiasson")
 ax7.plot(Literature["Beam_angle"],Literature["Load_param"], linestyle="-",color="black",label="Mattiasson")
 
-ax5.plot(FEM_timoshenko2_lowdeflection["Vertical_disp"],FEM_timoshenko2_lowdeflection["Load_param"], linestyle="--",color="gray",label="Timoshenko, DOF=6")
-ax6.plot(FEM_timoshenko2_lowdeflection["Horizontal_disp"],FEM_timoshenko2_lowdeflection["Load_param"], linestyle="--",color="gray",label="Timoshenko, DOF=6")
-ax7.plot(FEM_timoshenko2_lowdeflection["Beam_angle"],FEM_timoshenko2_lowdeflection["Load_param"], linestyle="--",color="gray",label="Timoshenko, DOF=6")
+ax5.plot(FEM_timoshenko2["Vertical_disp"],FEM_timoshenko2["Load_param"], linestyle="--",color="gray",label="Timoshenko, DOF=6")
+ax6.plot(FEM_timoshenko2["Horizontal_disp"],FEM_timoshenko2["Load_param"], linestyle="--",color="gray",label="Timoshenko, DOF=6")
+ax7.plot(FEM_timoshenko2["Beam_angle"],FEM_timoshenko2["Load_param"], linestyle="--",color="gray",label="Timoshenko, DOF=6")
 
-ax5.plot(FEM_timoshenko4_lowdeflection["Vertical_disp"],FEM_timoshenko4_lowdeflection["Load_param"], linestyle="--",color="purple",label="Timoshenko, DOF=18")
-ax6.plot(FEM_timoshenko4_lowdeflection["Horizontal_disp"],FEM_timoshenko4_lowdeflection["Load_param"], linestyle="--",color="purple",label="Timoshenko, DOF=18")
-ax7.plot(FEM_timoshenko4_lowdeflection["Beam_angle"],FEM_timoshenko4_lowdeflection["Load_param"], linestyle="--",color="purple",label="Timoshenko, DOF=18")
+ax5.plot(FEM_timoshenko4["Vertical_disp"],FEM_timoshenko4["Load_param"], linestyle="--",color="purple",label="Timoshenko, DOF=18")
+ax6.plot(FEM_timoshenko4["Horizontal_disp"],FEM_timoshenko4["Load_param"], linestyle="--",color="purple",label="Timoshenko, DOF=18")
+ax7.plot(FEM_timoshenko4["Beam_angle"],FEM_timoshenko4["Load_param"], linestyle="--",color="purple",label="Timoshenko, DOF=18")
 
 # ax5.plot(FEM_timoshenko6_lowdeflection["Vertical_disp"],FEM_timoshenko6_lowdeflection["Load_param"], linestyle="--",color="brown",label="Timoshenko, DOF=30")
 # ax6.plot(FEM_timoshenko6_lowdeflection["Horizontal_disp"],FEM_timoshenko6_lowdeflection["Load_param"], linestyle="--",color="brown",label="Timoshenko, DOF=30")
 # ax7.plot(FEM_timoshenko6_lowdeflection["Beam_angle"],FEM_timoshenko6_lowdeflection["Load_param"], linestyle="--",color="brown",label="Timoshenko, DOF=30")
 
 
+
 ax5.legend(fontsize="small")
 ax5.set_xlabel(f"Vertical Non-Dimensional Deflection "+r"$w/L$ (-)")
 ax5.set_ylabel(f"Load Parameter "+r"$\frac{P L^2}{EI}$ (-)")
 ax5.set_xlim(0,1)
-ax5.set_ylim(0,2)
+ax5.set_ylim(0,3)
 ax5.grid()
 fig5.tight_layout()
 ax6.legend(fontsize="small")
 ax6.set_xlabel(f"Horizonal Non-Dimensional Deflection "+r"$u/L$ (-)")
 ax6.set_ylabel(f"Load Parameter "+r"$\frac{P L^2}{EI}$ (-)")
 ax6.set_xlim(0,1)
-ax6.set_ylim(0,2)
+ax6.set_ylim(0,3)
 ax6.grid()
 fig6.tight_layout()
 ax7.legend(fontsize="small")
 ax7.set_xlabel(f"Tip Angle "+r"$\theta_0$ (rad)")
 ax7.set_ylabel(f"Load Parameter "+r"$\frac{P L^2}{EI}$ (-)")
 ax7.set_xlim(0,1)
-ax7.set_ylim(0,2)
+ax7.set_ylim(0,3)
 ax7.grid()
 fig7.tight_layout()
 
