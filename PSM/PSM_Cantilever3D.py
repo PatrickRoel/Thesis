@@ -35,7 +35,7 @@ EI = 100 # [N*m^2] bending stiffness of the cantilever
 
 
 L = 4 # [m] length of the cantilever
-L_side = 1 # [m] length of the square side
+L_side = 0.5 # [m] length of the square side
 
 
 

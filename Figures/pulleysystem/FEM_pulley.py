@@ -73,31 +73,35 @@ for center,point1,point2,scale in zip(centers,points1,points2,scales):
 
 # ax1.set_title("Initial Configuration")
 # ax2.set_title("Deformed Configuration")
-fontsize = 15
-ax2.text(0.75, -0.35, r'$\alpha_1$', fontsize=fontsize, ha='center', va='center')
-ax2.text(1.0, -0.27, r'$\alpha_2$', fontsize=fontsize, ha='center', va='center')
-ax2.text(1.8, -1.2, r'$\beta_1$', fontsize=fontsize, ha='center', va='center')
-ax2.text(2.1, -1.18, r'$\beta_2$', fontsize=fontsize, ha='center', va='center')
-ax2.text(2.25, -0.5, r'$\gamma_1$', fontsize=fontsize, ha='center', va='center')
-ax2.text(2.5, -0.48, r'$\gamma_2$', fontsize=fontsize, ha='center', va='center')
+fontsize = 18
+ax2.text(0.75, -0.33, r'$\alpha_1$', fontsize=fontsize, ha='center', va='center')
+ax2.text(0.98, -0.25, r'$\alpha_2$', fontsize=fontsize, ha='center', va='center')
+ax2.text(1.8, -1.18, r'$\beta_1$', fontsize=fontsize, ha='center', va='center')
+ax2.text(2.1, -1.15, r'$\beta_2$', fontsize=fontsize, ha='center', va='center')
+ax2.text(2.25, -0.48, r'$\gamma_1$', fontsize=fontsize, ha='center', va='center')
+ax2.text(2.5, -0.46, r'$\gamma_2$', fontsize=fontsize, ha='center', va='center')
 
 
 for i,coord in enumerate(coords):
-    if i<4:
+    if i<3:
         ax2.text(coord[0]+0.075,coord[1]+0.075,f'$\\text{{n}}_{{{i+1}}}$',fontsize=fontsize, ha='center', va='center' )
+    elif i==3:
+        ax2.text(coord[0]-0.115,coord[1]+0.075,f'$\\text{{n}}_{{{i+1}}}$',fontsize=fontsize, ha='center', va='center' )
     else:
-        ax2.text(coord[0]+0.106,coord[1],f'$\\text{{n}}_{{{i+1}}}$',fontsize=fontsize, ha='center', va='center' )
+        ax2.text(coord[0]+0.126,coord[1],f'$\\text{{n}}_{{{i+1}}}$',fontsize=fontsize, ha='center', va='center' )
 
 coords_init = Pulleys.coords_init
 coords_init = coords_init.reshape(-1,3)
 for i,coord in enumerate(coords_init):
-    if i<4:
-        ax1.text(coord[0]+0.075,coord[1]+0.075,f'$\\text{{n}}_{{{i+1}}}$',fontsize=fontsize, ha='center', va='center' )
+    if i<3:
+        ax1.text(coord[0]+0.095,coord[1]+0.075,f'$\\text{{n}}_{{{i+1}}}$',fontsize=fontsize, ha='center', va='center' )
+    elif i==3:
+        ax1.text(coord[0]-0.115,coord[1]+0.075,f'$\\text{{n}}_{{{i+1}}}$',fontsize=fontsize, ha='center', va='center' )
     elif i+1 ==7:
-        ax1.text(coord[0]+0.12,coord[1]-0.075,f'$\\text{{n}}_{{{i+1}}}$',fontsize=fontsize, ha='center', va='center' )
+        ax1.text(coord[0]+0.14,coord[1]-0.075,f'$\\text{{n}}_{{{i+1}}}$',fontsize=fontsize, ha='center', va='center' )
 
     else:
-        ax1.text(coord[0]+0.12,coord[1]+0.05,f'$\\text{{n}}_{{{i+1}}}$',fontsize=fontsize, ha='center', va='center' )
+        ax1.text(coord[0]+0.14,coord[1]+0.05,f'$\\text{{n}}_{{{i+1}}}$',fontsize=fontsize, ha='center', va='center' )
 
 # midpoint = [1.5,-0.05,0]
 # vect = [0.5,0,0]
@@ -113,13 +117,13 @@ ax2.grid()
 
 # Set larger font sizes for axis labels and ticks
 for ax in [ax1, ax2]:
-    ax.set_xlabel(ax.get_xlabel(), fontsize=14)
-    ax.set_ylabel(ax.get_ylabel(), fontsize=14)
-    ax.tick_params(axis='both', which='major', labelsize=12)
+    ax.set_xlabel(ax.get_xlabel(), fontsize=18)
+    ax.set_ylabel(ax.get_ylabel(), fontsize=18)
+    ax.tick_params(axis='both', which='major', labelsize=18)
 
 # ax1.legend()
 
-ax2.legend(fontsize=12)
+ax2.legend(fontsize=14)
 
 def calculate_angle(line1, line2):
     """
