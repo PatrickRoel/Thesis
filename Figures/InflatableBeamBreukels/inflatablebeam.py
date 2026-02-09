@@ -167,8 +167,8 @@ for inflatable_beam in inflatable_beams:
     
 
 ax.legend(loc='upper left', fontsize=8)
-ax.set_xlabel("Deflection [mm] / Deflection angle [deg]", fontsize=12)
-ax.set_ylabel("Tip force [N] / Tip moment [Nm]", fontsize=12)
+ax.set_xlabel("Deflection (mm) / Deflection angle (deg)", fontsize=12)
+ax.set_ylabel("Tip force [N] / Tip moment (Nm)", fontsize=12)
 ax.tick_params(axis='both', which='major', labelsize=12)
 # ax.minorticks_on() 
 ax.grid(which="major",color="grey")
@@ -214,8 +214,8 @@ for collection in ax.collections:
                    color=collection.get_facecolors()[0],
                    zorder=20)
 ax_left.legend(loc='upper left', fontsize=8)
-ax_left.set_xlabel("Deflection [mm] & Deflection angle [deg]", fontsize=12)
-ax_left.set_ylabel("Tip force [N] & Tip moment [Nm]", fontsize=12)
+ax_left.set_xlabel("Deflection (mm) & Deflection angle (deg)", fontsize=12)
+ax_left.set_ylabel("Tip force [N] & Tip moment (Nm)", fontsize=12)
 ax_left.tick_params(axis='both', which='major', labelsize=12)
 ax_left.grid(which="major", color="grey")
 ax_left.set_xlim(0, 120)
@@ -235,6 +235,7 @@ ax_right.set_ylabel('Deflection error (%)', fontsize=12)
 ax_right.tick_params(axis='both', which='major', labelsize=12)
 ax_left.text(0.5, -0.25, '(a)', transform=ax_left.transAxes, fontsize=14)
 ax_right.text(0.5, -0.25, '(b)', transform=ax_right.transAxes, fontsize=14)
+ax_right.set_ylim(0,35)
 
 fig_composite.tight_layout()
 fig_composite.savefig(os.path.join(script_dir, 'beamvalidation.pdf'))

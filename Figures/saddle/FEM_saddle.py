@@ -149,6 +149,7 @@ SaddleForm.solve(
     relax_init=0.25,
     relax_update=0.95,
     k_update=10,
+    convergence_criteria="residual"
 )
 ax2, fig2 = plot_structure(SaddleForm)
 ax3, fig3 = plot_convergence(SaddleForm)
