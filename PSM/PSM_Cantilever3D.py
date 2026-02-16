@@ -25,7 +25,7 @@ params = {
 
 
 P = 8 # [N] force applied at the end of the cantilever 
-P_Angle = 60   # [deg] angle of the force, 0 deg is in the y direction, 90 deg is in the z direction
+P_Angle = 90   # [deg] angle of the force, 0 deg is in the y direction, 90 deg is in the z direction
 
 P_y = P*np.cos(np.deg2rad(P_Angle)) # [N] force in y direction
 P_z = P*np.sin(np.deg2rad(P_Angle)) # [N] force in z direction
@@ -34,8 +34,8 @@ P_z = P*np.sin(np.deg2rad(P_Angle)) # [N] force in z direction
 EI = 100 # [N*m^2] bending stiffness of the cantilever
 
 
-L = 4 # [m] length of the cantilever
-L_side = 0.5 # [m] length of the square side
+L = 5 # [m] length of the cantilever
+L_side = 1 # [m] length of the square side
 
 
 
@@ -124,22 +124,28 @@ for i, node in enumerate(initial_conditions):
 
     # Plot the external forces as arrows
     ax.quiver(
-        *node[0].tolist(), f_ext[3 * i], f_ext[3 * i + 1], f_ext[3 * i + 2], length=1
+        *node[0].tolist(), f_ext[3 * i], f_ext[3 * i + 1], f_ext[3 * i + 2], length=1,color="red",zorder=50
     )
-
+label=False
 for connection in connections:
+    
     line = np.column_stack(
         [initial_conditions[connection[0]][0], initial_conditions[connection[1]][0]]
     )
 
-    ax.plot(line[0], line[1], line[2], color="black")
-
+    ax.plot(line[0], line[1], line[2], color="black",label="Spring" if label==False else "")
+    label=True
 ax.set_xlim(-.1, params["L"]+params["L_0"]+.1)
 ax.set_ylim(-params["L_0"]-params["L"]-.1,0.1)
 ax.set_zlim(-.1, params["L"]+params["L_0"]+.1)
 ax.set_xlabel("X")
 ax.set_ylabel("Y")
 ax.set_zlabel("Z")
+ax.scatter([], [], marker=r'$\longrightarrow$', c="red", s=150, label="External force vector")
+
+ax.legend()
+
+
 plt.show()
 
 # Now we can setup the particle system and simulation
@@ -197,15 +203,16 @@ for i, node in enumerate(final_positions):
 
     # Plot the external forces as arrows
     ax.quiver(
-        *node[0].tolist(), f_ext[3 * i], f_ext[3 * i + 1], f_ext[3 * i + 2]
+        *node[0].tolist(), f_ext[3 * i], f_ext[3 * i + 1], f_ext[3 * i + 2], color="red",zorder="20"
     )  # , length  = 0.3)
 
+label=False
 for connection in connections:
     line = np.column_stack(
         [final_positions[connection[0]][0], final_positions[connection[1]][0]]
     )
-    ax.plot(line[0], line[1], line[2], color="black")
-
+    ax.plot(line[0], line[1], line[2], color="black", label="spring" if label == False else "")
+    label=True
 
 # Set axis limits
 ax.set_xlim(-.1, params["L"]+params["L_0"]+.1)
@@ -218,6 +225,8 @@ ax.set_zlim(-.1, params["L"]+params["L_0"]+.1)
 ax.set_xlabel("X")
 ax.set_ylabel("Y")
 ax.set_zlabel("Z")
+ax.scatter([], [], marker=r'$\longrightarrow$', c="red", s=150, label="External force vector")
+
 ax.legend()
 plt.show()
 

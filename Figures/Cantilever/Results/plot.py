@@ -46,6 +46,13 @@ fig5, ax5 = plt.subplots(figsize=(4,4))
 fig6, ax6 = plt.subplots(figsize=(4,4))
 fig7, ax7 = plt.subplots(figsize=(4,4))
 
+
+ax1.plot(Literature["Vertical_disp"],Literature["Load_param"], linestyle="-",color="black",label="Mattiasson")
+ax2.plot(Literature["Horizontal_disp"],Literature["Load_param"], linestyle="-",color="black",label="Mattiasson")
+ax3.plot(Literature["Beam_angle"],Literature["Load_param"], linestyle="-",color="black",label="Mattiasson")
+ax5.plot(Literature["Vertical_disp"],Literature["Load_param"], linestyle="-",color="black",label="Mattiasson")
+ax6.plot(Literature["Horizontal_disp"],Literature["Load_param"], linestyle="-",color="black",label="Mattiasson")
+ax7.plot(Literature["Beam_angle"],Literature["Load_param"], linestyle="-",color="black",label="Mattiasson")
 for i in [0,2]:
     Bool = np.zeros_like(L_ratio,dtype=bool)
     Bool = np.where(L_ratio == L_ratios[i],True,Bool)
@@ -60,9 +67,6 @@ for i in [0,2]:
 ax1.text(-0.185, -0.185, '(a)', transform=ax1.transAxes, fontsize=14, verticalalignment='bottom')
 ax2.text(-0.185, -0.185, '(b)', transform=ax2.transAxes, fontsize=14, verticalalignment='bottom')
 
-ax1.plot(Literature["Vertical_disp"],Literature["Load_param"], linestyle="-",color="black",label="Mattiasson")
-ax2.plot(Literature["Horizontal_disp"],Literature["Load_param"], linestyle="-",color="black",label="Mattiasson")
-ax3.plot(Literature["Beam_angle"],Literature["Load_param"], linestyle="-",color="black",label="Mattiasson")
 
 
 
@@ -79,16 +83,16 @@ ax3.plot(FEM_timoshenko4["Beam_angle"],FEM_timoshenko4["Load_param"], linestyle=
 
 
 ax1.legend(fontsize=10)
-ax1.set_xlabel(r"$\frac{w}{L}$ (-)", fontsize=16)
-ax1.set_ylabel(r"$\frac{P L^2}{EI}$ (-)", fontsize=14)
+ax1.set_xlabel(r"$wL^{-1}$ (-)", fontsize=14)
+ax1.set_ylabel(r"$P L^2 (EI)^{-1}$ (-)", fontsize=14)
 ax1.tick_params(axis='both', which='major', labelsize=12)
 ax1.set_xlim(0,1)
 ax1.set_ylim(0,10)
 ax1.grid()
 fig1.tight_layout()
 # ax2.legend(fontsize=10)
-ax2.set_xlabel(r"$\frac{u}{L}$ (-)", fontsize=16)
-ax2.set_ylabel(r"$\frac{P L^2}{EI}$ (-)", fontsize=14)
+ax2.set_xlabel(r"$uL^{-1}$ (-)", fontsize=14)
+ax2.set_ylabel(r"$P L^2 (EI)^{-1}$ (-)", fontsize=14)
 ax2.tick_params(axis='both', which='major', labelsize=12)
 ax2.set_xlim(0,1)
 ax2.set_ylim(0,10)
@@ -96,7 +100,7 @@ ax2.grid()
 fig2.tight_layout()
 ax3.legend(fontsize=10)
 ax3.set_xlabel(r"$\theta_0$ (rad)", fontsize=14)
-ax3.set_ylabel(r"$\frac{P L^2}{EI}$ (-)", fontsize=14)
+ax3.set_ylabel(r"$P L^2 (EI)^{-1}$ (-)", fontsize=14)
 ax3.tick_params(axis='both', which='major', labelsize=12)
 ax3.set_xlim(0,1.5)
 ax3.set_ylim(0,10)
@@ -113,15 +117,15 @@ Horizontal_disp = PSM3D["Horizontal_disp"]
 Beam_angle = PSM3D["Beam_angle"]
 # Plotting 3D PSM Cantilever force angle sweep vs target values
 fig4, ax4 = plt.subplots(figsize=(8,4))
-ax4.plot(Force_angle, Vertical_disp, color=colors[0],label=r"$w/L$")
+ax4.plot(Force_angle, Vertical_disp, color=colors[0],label=r"$w L^{-1}$")
 ax4.plot([0,90],[0.46326,0.46326], linestyle="--",color=colors[0])
-ax4.plot(Force_angle, Horizontal_disp,color=colors[1], label=r"$u/L$")
+ax4.plot(Force_angle, Horizontal_disp,color=colors[1], label=r"$u L^{-1}$")
 ax4.plot([0,90],[0.13981,0.13981], linestyle="--",color=colors[1])
 ax4.plot(Force_angle, Beam_angle,color=colors[2], label=r"$\theta_0$")
 ax4.plot([0,90],[0.72876,0.72876], linestyle="--",color=colors[2])
 ax4.grid()
 ax4.set_xlabel(r"Force angle $\alpha$ (°)", fontsize=14)
-ax4.set_ylabel(r"$\mathrm{Non\text{-}dimensional\ deflection}\ w/L,\ u/L\ (-)$" "\n" r"$\mathrm{angle}\ \theta_0\ (rad)$", fontsize=14)
+ax4.set_ylabel(r"$\mathrm{Non\text{-}dimensional\ deflection}\ w L^{-1},\ u L^{-1}\ (-)$" "\n" r"$\mathrm{angle}\ \theta_0\ (rad)$", fontsize=14)
 ax4.tick_params(axis='both', which='major', labelsize=12)
 ax4.set_xlim(0,90)
 ax4.set_ylim(0,1)
@@ -137,9 +141,7 @@ fig4.savefig(os.path.join(script_dir, '..', 'Figures', 'Cantilever_PSM_Force_ang
 
 
 
-ax5.plot(Literature["Vertical_disp"],Literature["Load_param"], linestyle="-",color="black",label="Mattiasson")
-ax6.plot(Literature["Horizontal_disp"],Literature["Load_param"], linestyle="-",color="black",label="Mattiasson")
-ax7.plot(Literature["Beam_angle"],Literature["Load_param"], linestyle="-",color="black",label="Mattiasson")
+
 
 ax5.plot(FEM_timoshenko2["Vertical_disp"],FEM_timoshenko2["Load_param"], linestyle="--",color="gray",label="Timoshenko, DOF=6")
 ax6.plot(FEM_timoshenko2["Horizontal_disp"],FEM_timoshenko2["Load_param"], linestyle="--",color="gray",label="Timoshenko, DOF=6")
@@ -156,16 +158,16 @@ ax7.plot(FEM_timoshenko4["Beam_angle"],FEM_timoshenko4["Load_param"], linestyle=
 
 
 ax5.legend(fontsize=12)
-ax5.set_xlabel(r"$w/L$ (-)", fontsize=14)
-ax5.set_ylabel(r"$\frac{P L^2}{EI}$ (-)", fontsize=14)
+ax5.set_xlabel(r"$w L^{-1}$ (-)", fontsize=14)
+ax5.set_ylabel(r"$P L^2 (EI)^{-1}$ (-)", fontsize=14)
 ax5.tick_params(axis='both', which='major', labelsize=12)
 ax5.set_xlim(0,1)
 ax5.set_ylim(0,3)
 ax5.grid()
 fig5.tight_layout()
 ax6.legend(fontsize=12)
-ax6.set_xlabel(r"$u/L$ (-)", fontsize=14)
-ax6.set_ylabel(r"$\frac{P L^2}{EI}$ (-)", fontsize=14)
+ax6.set_xlabel(r"$u L^{-1}$ (-)", fontsize=14)
+ax6.set_ylabel(r"$P L^2 (EI)^{-1}$ (-)", fontsize=14)
 ax6.tick_params(axis='both', which='major', labelsize=12)
 ax6.set_xlim(0,1)
 ax6.set_ylim(0,3)
@@ -173,7 +175,7 @@ ax6.grid()
 fig6.tight_layout()
 ax7.legend(fontsize=12)
 ax7.set_xlabel(r"$\theta_0$ (rad)", fontsize=14)
-ax7.set_ylabel(r"$\frac{P L^2}{EI}$ (-)", fontsize=14)
+ax7.set_ylabel(r"$P L^2 (EI)^{-1}$ (-)", fontsize=14)
 ax7.tick_params(axis='both', which='major', labelsize=12)
 ax7.set_xlim(0,1)
 ax7.set_ylim(0,3)
