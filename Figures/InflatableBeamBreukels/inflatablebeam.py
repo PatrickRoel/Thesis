@@ -85,6 +85,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from kite_fem.FEMStructure import FEM_structure
 from kite_fem.Plotting import plot_structure
+from sklearn.metrics import r2_score
 
 def instiantiate(d,p):
     length  = 1  
@@ -215,7 +216,7 @@ for collection in ax.collections:
                    zorder=20)
 ax_left.legend(loc='upper left', fontsize=8)
 ax_left.set_xlabel("Deflection (mm) & Deflection angle (deg)", fontsize=12)
-ax_left.set_ylabel("Tip force [N] & Tip moment (Nm)", fontsize=12)
+ax_left.set_ylabel("Tip force (N) & Tip moment (Nm)", fontsize=12)
 ax_left.tick_params(axis='both', which='major', labelsize=12)
 ax_left.grid(which="major", color="grey")
 ax_left.set_xlim(0, 120)
@@ -229,6 +230,28 @@ for collection in ax2.collections:
                     marker='+',
                     color='black',
                     zorder=20)
+    
+# Polynomial fit for ax_right scatter points with weighted point at x=1, y=0
+x_data = df['Element Length (m)'].values
+y_data = df['Deflection error (%)'].values
+
+# Add weight to point x=1, y=0
+x_weighted = np.append(x_data, 1)
+y_weighted = np.append(y_data, 0)
+weights = np.ones(len(x_weighted))
+weights[-1] = 100  # High weight for the added point
+
+poly_coeffs = np.polyfit(x_weighted, y_weighted, 4, w=weights)
+poly_fit = np.poly1d(poly_coeffs)
+x_fit = np.linspace(x_data.min(), x_data.max(), 100)
+y_fit = poly_fit(x_fit)
+ax_right.plot(x_fit, y_fit, 'k--', linewidth=1.5)
+
+# Calculate R-squared value using original data
+r2 = r2_score(y_data, poly_fit(x_data))
+ax_right.text(0.95, 0.95, f'$R^2$ = {r2:.3f}', transform=ax_right.transAxes, 
+              fontsize=10, verticalalignment='top', horizontalalignment='right')
+
 ax_right.grid()
 ax_right.set_xlabel('Element length (m)', fontsize=12)
 ax_right.set_ylabel('Deflection error (%)', fontsize=12)

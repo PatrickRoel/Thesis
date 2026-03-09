@@ -1311,15 +1311,15 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      showguides="false"
-     inkscape:zoom="0.39855783"
-     inkscape:cx="139.25206"
-     inkscape:cy="1157.9248"
+     inkscape:zoom="0.33777244"
+     inkscape:cx="-93.258053"
+     inkscape:cy="1005.1146"
      inkscape:window-width="1920"
      inkscape:window-height="1024"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="LC3">
+     inkscape:current-layer="LC8">
     <inkscape:page
        x="1.9323159"
        y="5.9323153"
@@ -15914,38 +15914,38 @@
          transform="matrix(1.3333333,0,0,-1.3333333,0,269.69613)" />
       <path
          id="path268-8"
-         d="m 906.88075,-469.70458 h 199.82675 c 2.516,0 3.774,-1.02812 3.774,-3.08438 v -43.72516 c 0,-2.05626 -1.258,-3.08438 -3.774,-3.08438 H 906.88075 c -2.51603,0 -3.77406,1.02812 -3.77406,3.08438 v 43.72516 c 0,2.05626 1.25803,3.08438 3.77406,3.08438 z"
-         style="fill:#ffffff;fill-opacity:0.9;fill-rule:nonzero;stroke:#cccccc;stroke-width:1.21851;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:0.9" />
+         d="m 860.8253,-500.78047 h 292.3005 c 3.6803,0 5.5205,-1.50391 5.5205,-4.51174 v -63.95984 c 0,-3.00784 -1.8402,-4.51174 -5.5205,-4.51174 H 860.8253 c -3.68037,0 -5.52058,1.5039 -5.52058,4.51174 v 63.95984 c 0,3.00783 1.84021,4.51174 5.52058,4.51174 z"
+         style="fill:#ffffff;fill-opacity:0.9;fill-rule:nonzero;stroke:#cccccc;stroke-width:1.7824;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:0.9" />
       <path
          id="path269-04"
-         d="m 911.69203,-509.72655 h 18.66667 18.66666"
-         style="fill:none;stroke:#000000;stroke-width:3.33333;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" />
+         d="m 867.86311,-559.32339 h 27.30504 27.30502"
+         style="fill:none;stroke:#000000;stroke-width:4.87589;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" />
       <text
          id="text269-1"
          xml:space="preserve"
-         x="963.95874"
-         y="-503.19321"
-         style="font-size:16px;stroke-width:1.33333"><tspan
+         x="944.31726"
+         y="-549.7666"
+         style="font-size:23.4043px;stroke-width:1.95035"><tspan
            id="tspan269-1"
-           style="font-variant:normal;font-weight:normal;font-size:18.6667px;font-family:'DejaVu Sans';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333"
-           x="963.95874"
-           dx="0 0 0 0 0 0 -0.39583331"
-           y="-503.19321">Measurements</tspan></text>
+           style="font-variant:normal;font-weight:normal;font-size:27.305px;font-family:'DejaVu Sans';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.95035"
+           x="944.31726"
+           dx="0 0 0 0 0 0 -0.57901293"
+           y="-549.7666">Measurements</tspan></text>
       <path
          id="path270-3"
-         d="m 911.69203,-482.33071 h 18.66667 18.66666"
-         style="fill:none;stroke:#ff0000;stroke-width:3.33333;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" />
+         d="m 867.86311,-519.24959 h 27.30504 27.30502"
+         style="fill:none;stroke:#ff0000;stroke-width:4.87589;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" />
       <text
          id="text270-5"
          xml:space="preserve"
-         x="963.95874"
-         y="-475.79736"
-         style="font-size:16px;stroke-width:1.33333"><tspan
+         x="944.31726"
+         y="-509.69278"
+         style="font-size:23.4043px;stroke-width:1.95035"><tspan
            id="tspan270-9"
-           style="font-variant:normal;font-weight:normal;font-size:18.6667px;font-family:'DejaVu Sans';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333"
-           x="963.95874"
-           dx="0 0 0 0 0 0 0 -0.39583331"
-           y="-475.79736">Model results</tspan></text>
+           style="font-variant:normal;font-weight:normal;font-size:27.305px;font-family:'DejaVu Sans';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.95035"
+           x="944.31726"
+           dx="0 0 0 0 0 0 0 -0.57901293"
+           y="-509.69278">Model results</tspan></text>
       <path
          id="path271-3"
          d="M 422.82879,53.04375 H 531.54621 V 195.0721 H 422.82879 Z"
@@ -20723,9 +20723,9 @@
          transform="rotate(-90)"><tspan
            sodipodi:role="line"
            id="tspan390-4"
-           x="52.627396"
+           x="52.627392"
            y="-50.097645"
-           style="font-size:29.3333px">Load case 1</tspan></text>
+           style="font-size:29.3333px">LC1</tspan></text>
       <text
          xml:space="preserve"
          style="font-size:29.3333px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke:none;stroke-width:4;stroke-miterlimit:3.6"
@@ -20737,7 +20737,7 @@
            id="tspan390-4-4"
            x="-157.56409"
            y="-49.808662"
-           style="font-size:29.3333px">Load case 2</tspan></text>
+           style="font-size:29.3333px">LC2</tspan></text>
       <text
          xml:space="preserve"
          style="font-size:29.3333px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke:none;stroke-width:4;stroke-miterlimit:3.6"
@@ -20749,7 +20749,7 @@
            id="tspan390-4-1"
            x="-583.45605"
            y="-50.808666"
-           style="font-size:29.3333px">Load case 4</tspan></text>
+           style="font-size:29.3333px">LC4</tspan></text>
       <text
          xml:space="preserve"
          style="font-size:29.3333px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke:none;stroke-width:4;stroke-miterlimit:3.6"
@@ -20761,7 +20761,7 @@
            id="tspan390-4-1-2"
            x="-370.26324"
            y="-50.808666"
-           style="font-size:29.3333px">Load case 3</tspan></text>
+           style="font-size:29.3333px">LC3</tspan></text>
       <text
          xml:space="preserve"
          style="font-size:29.3333px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke:none;stroke-width:4;stroke-miterlimit:3.6"
@@ -20773,7 +20773,7 @@
            id="tspan390-4-1-4"
            x="-792.26324"
            y="-49.437122"
-           style="font-size:29.3333px">Load case 5</tspan></text>
+           style="font-size:29.3333px">LC5</tspan></text>
     </g>
     <g
        id="Toptext"
@@ -20824,9 +20824,9 @@
          transform="rotate(-90)"><tspan
            sodipodi:role="line"
            id="tspan390-4-8"
-           x="52.627396"
+           x="52.627392"
            y="-50.097645"
-           style="font-size:29.3333px">Load case 6</tspan></text>
+           style="font-size:29.3333px">LC6</tspan></text>
       <text
          xml:space="preserve"
          style="font-size:29.3333px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke:none;stroke-width:4;stroke-miterlimit:3.6"
@@ -20838,7 +20838,7 @@
            id="tspan390-4-4-2"
            x="-157.56409"
            y="-49.808662"
-           style="font-size:29.3333px">Load case 7</tspan></text>
+           style="font-size:29.3333px">LC7</tspan></text>
       <text
          xml:space="preserve"
          style="font-size:29.3333px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke:none;stroke-width:4;stroke-miterlimit:3.6"
@@ -20850,7 +20850,7 @@
            id="tspan390-4-1-9"
            x="-583.45605"
            y="-50.808666"
-           style="font-size:29.3333px">Load case 9</tspan></text>
+           style="font-size:29.3333px">LC9</tspan></text>
       <text
          xml:space="preserve"
          style="font-size:29.3333px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke:none;stroke-width:4;stroke-miterlimit:3.6"
@@ -20862,7 +20862,7 @@
            id="tspan390-4-1-2-6"
            x="-370.26324"
            y="-50.808666"
-           style="font-size:29.3333px">Load case 8</tspan></text>
+           style="font-size:29.3333px">LC8</tspan></text>
       <text
          xml:space="preserve"
          style="font-size:29.3333px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke:none;stroke-width:4;stroke-miterlimit:3.6"
@@ -20874,7 +20874,7 @@
            id="tspan390-4-1-4-6"
            x="-794.26324"
            y="-49.437122"
-           style="font-size:29.3333px">Load case 10</tspan></text>
+           style="font-size:29.3333px">LC10</tspan></text>
     </g>
   </g>
 </svg>

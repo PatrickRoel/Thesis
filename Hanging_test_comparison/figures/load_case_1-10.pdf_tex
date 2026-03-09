@@ -1,0 +1,392 @@
+%% Creator: Inkscape 1.4.3 (0d15f75042, 2025-12-25), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'load_case_1-10.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{937.20977783bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.92080888)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{load_case_1-10.pdf}}%
+    \put(0.05454699,0.75027817){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{load_case_1-10.pdf}}%
+    \put(0.05454699,0.78446798){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{load_case_1-10.pdf}}%
+    \put(0.05454699,0.8186578){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{load_case_1-10.pdf}}%
+    \put(0.05454699,0.85284761){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.04627776,0.77899183){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}x (m)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{load_case_1-10.pdf}}%
+    \put(0.6476012,0.75027817){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{load_case_1-10.pdf}}%
+    \put(0.6476012,0.78446798){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{load_case_1-10.pdf}}%
+    \put(0.6476012,0.8186578){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{load_case_1-10.pdf}}%
+    \put(0.6476012,0.85284761){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.63933198,0.77963369){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}z (m)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{load_case_1-10.pdf}}%
+    \put(0.45547514,0.74821174){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{load_case_1-10.pdf}}%
+    \put(0.45547514,0.78390441){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{load_case_1-10.pdf}}%
+    \put(0.45547514,0.81959708){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{load_case_1-10.pdf}}%
+    \put(0.45547514,0.85528974){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.44720592,0.77963369){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}z (m)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{load_case_1-10.pdf}}%
+    \put(0.0545477,0.5987432){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{load_case_1-10.pdf}}%
+    \put(0.0545477,0.63293301){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{load_case_1-10.pdf}}%
+    \put(0.0545477,0.66712283){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{load_case_1-10.pdf}}%
+    \put(0.0545477,0.70131264){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.04627848,0.62745686){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}x (m)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{load_case_1-10.pdf}}%
+    \put(0.64760192,0.5987432){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{load_case_1-10.pdf}}%
+    \put(0.64760192,0.63293301){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{load_case_1-10.pdf}}%
+    \put(0.64760192,0.66712283){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{load_case_1-10.pdf}}%
+    \put(0.64760192,0.70131264){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.6393327,0.62809872){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}z (m)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{load_case_1-10.pdf}}%
+    \put(0.45547586,0.59667677){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{load_case_1-10.pdf}}%
+    \put(0.45547586,0.63236944){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{load_case_1-10.pdf}}%
+    \put(0.45547586,0.66806211){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{load_case_1-10.pdf}}%
+    \put(0.45547586,0.70375477){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.44720664,0.62809872){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}z (m)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{load_case_1-10.pdf}}%
+    \put(0.05454772,0.44720741){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{load_case_1-10.pdf}}%
+    \put(0.05454772,0.48139722){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{load_case_1-10.pdf}}%
+    \put(0.05454772,0.51558703){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{load_case_1-10.pdf}}%
+    \put(0.05454772,0.54977685){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.04627849,0.47592107){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}x (m)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{load_case_1-10.pdf}}%
+    \put(0.64760193,0.44720741){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=30]{load_case_1-10.pdf}}%
+    \put(0.64760193,0.48139722){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=31]{load_case_1-10.pdf}}%
+    \put(0.64760193,0.51558703){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=32]{load_case_1-10.pdf}}%
+    \put(0.64760193,0.54977685){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.63933271,0.47656293){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}z (m)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=33]{load_case_1-10.pdf}}%
+    \put(0.45547587,0.44514098){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=34]{load_case_1-10.pdf}}%
+    \put(0.45547587,0.48083365){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=35]{load_case_1-10.pdf}}%
+    \put(0.45547587,0.51652631){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=36]{load_case_1-10.pdf}}%
+    \put(0.45547587,0.55221898){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.44720665,0.47656293){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}z (m)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=37]{load_case_1-10.pdf}}%
+    \put(0.05454688,0.29566735){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=38]{load_case_1-10.pdf}}%
+    \put(0.05454688,0.32985717){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=39]{load_case_1-10.pdf}}%
+    \put(0.05454688,0.36404698){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=40]{load_case_1-10.pdf}}%
+    \put(0.05454688,0.39823679){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.04627766,0.32438101){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}x (m)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=41]{load_case_1-10.pdf}}%
+    \put(0.6476011,0.29566735){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=42]{load_case_1-10.pdf}}%
+    \put(0.6476011,0.32985717){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=43]{load_case_1-10.pdf}}%
+    \put(0.6476011,0.36404698){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=44]{load_case_1-10.pdf}}%
+    \put(0.6476011,0.39823679){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.63933187,0.32502288){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}z (m)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=45]{load_case_1-10.pdf}}%
+    \put(0.45547504,0.29360093){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=46]{load_case_1-10.pdf}}%
+    \put(0.45547504,0.32929359){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=47]{load_case_1-10.pdf}}%
+    \put(0.45547504,0.36498626){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=48]{load_case_1-10.pdf}}%
+    \put(0.45547504,0.40067892){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.44720581,0.32502288){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}z (m)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=49]{load_case_1-10.pdf}}%
+    \put(0.05454873,0.14412709){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=50]{load_case_1-10.pdf}}%
+    \put(0.05454873,0.17831691){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=51]{load_case_1-10.pdf}}%
+    \put(0.05454873,0.21250672){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=52]{load_case_1-10.pdf}}%
+    \put(0.05454873,0.24669654){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.04627951,0.17284076){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}x (m)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=53]{load_case_1-10.pdf}}%
+    \put(0.64760295,0.14412709){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=54]{load_case_1-10.pdf}}%
+    \put(0.64760295,0.17831691){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=55]{load_case_1-10.pdf}}%
+    \put(0.64760295,0.21250672){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=56]{load_case_1-10.pdf}}%
+    \put(0.64760295,0.24669654){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.63933373,0.17348262){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}z (m)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=57]{load_case_1-10.pdf}}%
+    \put(0.45547689,0.14206067){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=58]{load_case_1-10.pdf}}%
+    \put(0.45547689,0.17775333){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=59]{load_case_1-10.pdf}}%
+    \put(0.45547689,0.213446){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=60]{load_case_1-10.pdf}}%
+    \put(0.45547689,0.24913867){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.44720767,0.17348262){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}z (m)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=61]{load_case_1-10.pdf}}%
+    \put(0.05455526,-0.00741416){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=62]{load_case_1-10.pdf}}%
+    \put(0.05455526,0.02677566){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=63]{load_case_1-10.pdf}}%
+    \put(0.05455526,0.06096547){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=64]{load_case_1-10.pdf}}%
+    \put(0.05455526,0.09515529){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.04628604,0.02129951){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}x (m)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=65]{load_case_1-10.pdf}}%
+    \put(0.64760948,-0.00741416){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=66]{load_case_1-10.pdf}}%
+    \put(0.64760948,0.02677566){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=67]{load_case_1-10.pdf}}%
+    \put(0.64760948,0.06096547){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=68]{load_case_1-10.pdf}}%
+    \put(0.64760948,0.09515529){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.63934025,0.02194137){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}z (m)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=69]{load_case_1-10.pdf}}%
+    \put(0.45548342,-0.00948058){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=70]{load_case_1-10.pdf}}%
+    \put(0.45548342,0.02621209){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=71]{load_case_1-10.pdf}}%
+    \put(0.45548342,0.06190475){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=72]{load_case_1-10.pdf}}%
+    \put(0.45548342,0.09759742){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.44721419,0.02194137){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}z (m)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=73]{load_case_1-10.pdf}}%
+    \put(0.05455544,-0.15895524){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=74]{load_case_1-10.pdf}}%
+    \put(0.05455544,-0.12476542){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=75]{load_case_1-10.pdf}}%
+    \put(0.05455544,-0.09057561){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=76]{load_case_1-10.pdf}}%
+    \put(0.05455544,-0.05638579){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.04628621,-0.13024157){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}x (m)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=77]{load_case_1-10.pdf}}%
+    \put(0.64760966,-0.15895524){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=78]{load_case_1-10.pdf}}%
+    \put(0.64760966,-0.12476542){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=79]{load_case_1-10.pdf}}%
+    \put(0.64760966,-0.09057561){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=80]{load_case_1-10.pdf}}%
+    \put(0.64760966,-0.05638579){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.63934043,-0.12959971){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}z (m)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=81]{load_case_1-10.pdf}}%
+    \put(0.4554836,-0.16102166){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=82]{load_case_1-10.pdf}}%
+    \put(0.4554836,-0.12532899){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=83]{load_case_1-10.pdf}}%
+    \put(0.4554836,-0.08963633){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=84]{load_case_1-10.pdf}}%
+    \put(0.4554836,-0.05394366){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.44721437,-0.12959971){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}z (m)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=85]{load_case_1-10.pdf}}%
+    \put(0.05455854,-0.31049559){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=86]{load_case_1-10.pdf}}%
+    \put(0.05455854,-0.27630577){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=87]{load_case_1-10.pdf}}%
+    \put(0.05455854,-0.24211596){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=88]{load_case_1-10.pdf}}%
+    \put(0.05455854,-0.20792614){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.04628931,-0.28178192){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}x (m)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=89]{load_case_1-10.pdf}}%
+    \put(0.64761276,-0.31049559){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=90]{load_case_1-10.pdf}}%
+    \put(0.64761276,-0.27630577){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=91]{load_case_1-10.pdf}}%
+    \put(0.64761276,-0.24211596){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=92]{load_case_1-10.pdf}}%
+    \put(0.64761276,-0.20792614){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.63934353,-0.28114006){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}z (m)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=93]{load_case_1-10.pdf}}%
+    \put(0.79542488,0.22994284){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Measurements\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=94]{load_case_1-10.pdf}}%
+    \put(0.79542488,0.20801938){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Model results\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=95]{load_case_1-10.pdf}}%
+    \put(0.4554867,-0.31256201){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=96]{load_case_1-10.pdf}}%
+    \put(0.4554867,-0.27686935){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=97]{load_case_1-10.pdf}}%
+    \put(0.4554867,-0.24117668){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=98]{load_case_1-10.pdf}}%
+    \put(0.4554867,-0.20548401){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.44721747,-0.28114006){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}z (m)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=99]{load_case_1-10.pdf}}%
+    \put(0.05455992,-0.46204058){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=100]{load_case_1-10.pdf}}%
+    \put(0.05455992,-0.42785077){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=101]{load_case_1-10.pdf}}%
+    \put(0.05455992,-0.39366095){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=102]{load_case_1-10.pdf}}%
+    \put(0.05455992,-0.35947114){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.04629069,-0.43332692){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}x (m)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=103]{load_case_1-10.pdf}}%
+    \put(0.64761413,-0.46204058){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=104]{load_case_1-10.pdf}}%
+    \put(0.64761413,-0.42785077){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=105]{load_case_1-10.pdf}}%
+    \put(0.64761413,-0.39366095){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=106]{load_case_1-10.pdf}}%
+    \put(0.64761413,-0.35947114){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.63934491,-0.43268506){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}z (m)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=107]{load_case_1-10.pdf}}%
+    \put(0.45548807,-0.46410701){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=108]{load_case_1-10.pdf}}%
+    \put(0.45548807,-0.42841434){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=109]{load_case_1-10.pdf}}%
+    \put(0.45548807,-0.39272167){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=110]{load_case_1-10.pdf}}%
+    \put(0.45548807,-0.35702901){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.44721885,-0.43268506){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}z (m)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=111]{load_case_1-10.pdf}}%
+    \put(0.10182902,-0.65710643){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=112]{load_case_1-10.pdf}}%
+    \put(0.13601883,-0.65710643){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=113]{load_case_1-10.pdf}}%
+    \put(0.17020865,-0.65710643){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=114]{load_case_1-10.pdf}}%
+    \put(0.20439846,-0.65710643){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=115]{load_case_1-10.pdf}}%
+    \put(0.23053995,-0.65710643){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=116]{load_case_1-10.pdf}}%
+    \put(0.26472977,-0.65710643){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=117]{load_case_1-10.pdf}}%
+    \put(0.29891959,-0.65710643){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=118]{load_case_1-10.pdf}}%
+    \put(0.3331094,-0.65710643){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=119]{load_case_1-10.pdf}}%
+    \put(0.36729922,-0.65710643){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4\end{tabular}}}}%
+    \put(0.21105892,-0.67996351){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}y (m)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=120]{load_case_1-10.pdf}}%
+    \put(0.05455912,-0.61358262){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=121]{load_case_1-10.pdf}}%
+    \put(0.05455912,-0.5793928){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=122]{load_case_1-10.pdf}}%
+    \put(0.05455912,-0.54520299){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=123]{load_case_1-10.pdf}}%
+    \put(0.05455912,-0.51101317){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.0462899,-0.58486895){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}x (m)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=124]{load_case_1-10.pdf}}%
+    \put(0.69488323,-0.65710643){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=125]{load_case_1-10.pdf}}%
+    \put(0.72907305,-0.65710643){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=126]{load_case_1-10.pdf}}%
+    \put(0.76326287,-0.65710643){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=127]{load_case_1-10.pdf}}%
+    \put(0.79745269,-0.65710643){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=128]{load_case_1-10.pdf}}%
+    \put(0.82359417,-0.65710643){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=129]{load_case_1-10.pdf}}%
+    \put(0.85778402,-0.65710643){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=130]{load_case_1-10.pdf}}%
+    \put(0.8919738,-0.65710643){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=131]{load_case_1-10.pdf}}%
+    \put(0.92616359,-0.65710643){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=132]{load_case_1-10.pdf}}%
+    \put(0.96035345,-0.65710643){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4\end{tabular}}}}%
+    \put(0.80411314,-0.67996351){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}y (m)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=133]{load_case_1-10.pdf}}%
+    \put(0.64761334,-0.61358262){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=134]{load_case_1-10.pdf}}%
+    \put(0.64761334,-0.5793928){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=135]{load_case_1-10.pdf}}%
+    \put(0.64761334,-0.54520299){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=136]{load_case_1-10.pdf}}%
+    \put(0.64761334,-0.51101317){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.63934412,-0.58422709){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}z (m)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=137]{load_case_1-10.pdf}}%
+    \put(0.47798965,-0.65710643){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=138]{load_case_1-10.pdf}}%
+    \put(0.51368232,-0.65710643){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=139]{load_case_1-10.pdf}}%
+    \put(0.54937498,-0.65710643){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=140]{load_case_1-10.pdf}}%
+    \put(0.58506765,-0.65710643){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.50758603,-0.67996351){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}x (m)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=141]{load_case_1-10.pdf}}%
+    \put(0.45548728,-0.61564904){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=142]{load_case_1-10.pdf}}%
+    \put(0.45548728,-0.57995637){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=143]{load_case_1-10.pdf}}%
+    \put(0.45548728,-0.54426371){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=144]{load_case_1-10.pdf}}%
+    \put(0.45548728,-0.50857104){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.44721806,-0.58422709){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}z (m)\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=145]{load_case_1-10.pdf}}%
+    \put(0.01912474,0.81141486){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}LC1\end{tabular}}}}}%
+    \put(0.01935599,0.65955797){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}LC2\end{tabular}}}}}%
+    \put(0.01855574,0.35186411){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}LC4\end{tabular}}}}}%
+    \put(0.01855574,0.50588937){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}LC3\end{tabular}}}}}%
+    \put(0.01965332,0.20100733){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}LC5\end{tabular}}}}}%
+    \put(0.23373484,0.89963696){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Top\end{tabular}}}}%
+    \put(0.53189924,0.89905215){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Side\end{tabular}}}}%
+    \put(0.82533319,0.89920169){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Front\end{tabular}}}}%
+    \put(0.02034734,0.04953044){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}LC6\end{tabular}}}}}%
+    \put(0.0205786,-0.10182797){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}LC7\end{tabular}}}}}%
+    \put(0.01977835,-0.40851181){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}LC9\end{tabular}}}}}%
+    \put(0.01977835,-0.25499215){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}LC8\end{tabular}}}}}%
+    \put(0.02087592,-0.56031358){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}LC10\end{tabular}}}}}%
+  \end{picture}%
+\endgroup%

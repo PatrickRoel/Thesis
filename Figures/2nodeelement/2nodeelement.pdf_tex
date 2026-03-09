@@ -59,9 +59,9 @@
     \put(0.50199399,0.28311012){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$z_\text{e}$\end{tabular}}}}%
     \put(0.38059055,0.21913696){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$y_\text{e}$\end{tabular}}}}%
     \put(0.14141831,0.02067496){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\text{n}_1$\end{tabular}}}}%
-    \put(0.88311022,0.01952653){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$x_\text{g}$\end{tabular}}}}%
-    \put(0.83241674,0.07705125){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$y_\text{g}$\end{tabular}}}}%
-    \put(0.77527864,0.14877649){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$z_\text{g}$\end{tabular}}}}%
+    \put(0.90343536,0.02049438){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$x_\text{g}$\end{tabular}}}}%
+    \put(0.83919174,0.09350478){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$y_\text{g}$\end{tabular}}}}%
+    \put(0.77237511,0.14200141){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$z_\text{g}$\end{tabular}}}}%
     \put(0.07342412,0.05077865){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$v_1$\end{tabular}}}}%
     \put(0.16417381,0.12563356){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$w_1$\end{tabular}}}}%
     \put(0.28756008,0.10334087){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\varphi_1$\end{tabular}}}}%
